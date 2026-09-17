@@ -118,9 +118,6 @@ def giro_dei_post(adesso: datetime) -> None:
             print(f"   scheda {numero}: non trovo il segno del pacchetto nel testo della scheda, la salto")
             continue
         nome, impronta = segno.group(1), segno.group(2)
-        if nome.startswith("zz-prova") and not PROVA:
-            print(f"   scheda {numero}: {nome} è un pacchetto di prova, in un giro vero non esce mai")
-            continue
         cartella = Path("coda", nome)
         if not (cartella / "post.json").exists() or Path("pubblicati", f"{nome}.json").exists():
             continue
@@ -142,6 +139,9 @@ def giro_dei_post(adesso: datetime) -> None:
         elif adesso >= uscita:
             if impronta != f"{dati.get('sha256_jpeg', '')[:16]}-{dati.get('impronta_approvata', '')}" or segno.group(3) != dati["esce_il_utc"]:
                 print(f"   scheda {numero}: approvazione data a una versione diversa, non pubblico")
+                continue
+            if nome.startswith("zz-prova") and not PROVA:
+                print(f"   scheda {numero}: {nome} è un pacchetto di prova, in un giro vero non esce mai")
                 continue
             print(f"   scheda {numero}: è ora di pubblicare {nome}")
             try:
