@@ -1,0 +1,36 @@
+name: Pubblica i post programmati
+
+on:
+  schedule:
+    # ogni 15 minuti, lontano dall'ora piena (quando GitHub è più carico). L'orario è indicativo:
+    # GitHub può far partire il giro con 5-30 minuti di ritardo.
+    - cron: "7,22,37,52 * * * *"
+  workflow_dispatch:
+    inputs:
+      prova:
+        description: "Prova generale: fa tutto tranne pubblicare"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: pubblica-programmati
+  cancel-in-progress: false
+
+jobs:
+  pubblica:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Giro dei post programmati
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          PROVA: ${{ (github.event_name == 'workflow_dispatch' && inputs.prova) && '1' || '0' }}
+        run: python3 -B strumenti/pubblica_programmati.py

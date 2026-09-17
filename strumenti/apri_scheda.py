@@ -68,7 +68,7 @@ Rispondi a questa email scrivendo **nella prima riga** una di queste tre cose:
 
 Questo archivio è pubblico: la nota che scrivi si può leggere da fuori. Non inoltrare questa email a nessuno: chi la riceve potrebbe rispondere al posto tuo.
 
-<!-- pacchetto:{nome} impronta:{d.get('sha256_jpeg', '')[:16]}-{d.get('impronta_approvata', '')} -->
+<!-- pacchetto:{nome} impronta:{d.get('sha256_jpeg', '')[:16]}-{d.get('impronta_approvata', '')} uscita:{d.get('esce_il_utc') or 'nessuna'} -->
 """
 
 
@@ -89,10 +89,10 @@ def main() -> None:
         elif segno not in (scheda.get("body") or ""):
             numero = scheda["number"]
             github("PATCH", f"/issues/{numero}", {"body": corpo})
-            for etichetta in ("approvato", "da-rifare", "scartato"):
+            for etichetta in ("approvato", "da-rifare", "scartato", "promemoria", "scaduto"):
                 if any(e["name"] == etichetta for e in scheda.get("labels", [])):
                     github("DELETE", f"/issues/{numero}/labels/{etichetta}")
-            github("POST", f"/issues/{numero}/comments", {"body": f"@{PROPRIETARIA} il post è stato modificato dopo la tua ultima risposta: "
+            github("POST", f"/issues/{numero}/comments", {"body": f"@{PROPRIETARIA} il post, o la sua data di uscita, è cambiato dopo la tua ultima risposta:"
                                                                   "la decisione di prima non vale più. Riapri la scheda per vedere la versione nuova e rispondi di nuovo."})
             print(f"scheda {numero} aggiornata per {nome}")
         else:
