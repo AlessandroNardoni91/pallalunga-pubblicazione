@@ -13,6 +13,7 @@ import os
 import re
 import urllib.error
 import urllib.request
+from datetime import datetime
 from pathlib import Path
 
 ARCHIVIO = os.environ["GITHUB_REPOSITORY"]
@@ -40,7 +41,11 @@ def github(metodo: str, percorso: str, dati: dict | None = None):
 def testo_scheda(nome: str, d: dict) -> str:
     immagine = f"https://raw.githubusercontent.com/{ARCHIVIO}/{VERSIONE}/coda/{nome}/post.jpg"
     didascalia = "\n".join("> " + riga for riga in d["didascalia"].splitlines())
-    uscita = d.get("esce_il") or "non ancora fissata"
+    uscita = "non ancora fissata"
+    if d.get("esce_il"):  # "2026-09-30T18:30+02:00" -> "mercoledì 30/09/2026 alle 18:30 (ora italiana)"
+        quando = datetime.fromisoformat(d["esce_il"])
+        giorno = ["lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato", "domenica"][quando.weekday()]
+        uscita = f"{giorno} {quando:%d/%m/%Y} alle {quando:%H:%M} (ora italiana)"
     return f"""@{PROPRIETARIA} c'è un post da approvare: **{d.get('titolo', nome)}**
 
 **Uscita prevista:** {uscita}
