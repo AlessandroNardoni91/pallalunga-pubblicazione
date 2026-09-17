@@ -1,0 +1,24 @@
+name: Leggi la risposta della proprietaria
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  leggi:
+    # Primo filtro qui, secondo filtro identico dentro il programma.
+    if: >-
+      github.event.comment.user.login == github.repository_owner &&
+      github.event.comment.author_association == 'OWNER' &&
+      !github.event.issue.pull_request
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Registra la decisione
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 strumenti/leggi_risposta.py

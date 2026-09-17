@@ -79,7 +79,7 @@ def main() -> None:
         scheda = next((s for s in aperte if f"<!-- pacchetto:{nome} " in (s.get("body") or "")), None)
         if scheda is None:
             nuova = github("POST", "/issues", {"title": f"Da approvare: {d.get('titolo', nome)}", "body": corpo,
-                                                "labels": ["coda"], "assignees": [PROPRIETARIA]})
+                                                "labels": ["coda"]})  # niente "assegnata a": farebbe partire una seconda email inutile
             print(f"scheda aperta per {nome}: numero {nuova['number']}")
         elif segno not in (scheda.get("body") or ""):
             numero = scheda["number"]
