@@ -1,0 +1,14 @@
+{
+  "id": "zz-prova-uscita/didascalia.md",
+  "titolo": "Terza prova tecnica (post finto, da ignorare)",
+  "didascalia": "Questa è la terza prova tecnica 👀 Serve a controllare che il programma di GitHub trovi un post approvato, riconosca che la sua ora è arrivata e lo porti fino a un passo dalla pubblicazione, senza pubblicarlo.\n\nIl testo è lungo quanto una didascalia vera perché il controllo automatico pretende almeno cinquecento caratteri, e una prova con un testo troppo corto verrebbe fermata prima ancora di cominciare. Per questo c'è un paragrafo in più che non dice niente di interessante.\n\nA questa email non serve rispondere: l'approvazione viene simulata.\n\nSe leggi queste righe su Instagram qualcosa è andato storto ⬇️\n\n#SerieA #calcio #prova #collaudo #pallalungaepedalare",
+  "caratteri": 666,
+  "hashtag": 5,
+  "impronta_approvata": "ef355cafe1c92c90",
+  "approvata_il": null,
+  "sha256_jpeg": "08f9ce21f596176e80ec7650f536f7c00c1d1dea6b076af0f6bee357128de16b",
+  "peso_jpeg_byte": 69348,
+  "esce_il": "2026-09-17T19:52+02:00",
+  "esce_il_utc": "2026-09-17T17:52+00:00",
+  "preparato_il": "2026-09-17T19:58:08"
+}
