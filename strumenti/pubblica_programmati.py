@@ -111,10 +111,16 @@ def pubblica_uno(scheda: dict, nome: str, cartella: Path, dati: dict) -> None:
 def giro_dei_post(adesso: datetime) -> None:
     for scheda in github("GET", "/issues?state=open&labels=coda&per_page=100") or []:
         numero, nomi = scheda["number"], etichette(scheda)
-        segno = re.search(r"<!-- pacchetto:(\S+) impronta:(\S+) -->", scheda.get("body") or "")
-        if scheda["user"]["login"] != AUTOMATISMO or not segno or nomi & FERMI:
+        segno = re.search(r"<!-- pacchetto:(\S+) impronta:(\S+) uscita:(\S+) -->", scheda.get("body") or "")
+        if scheda["user"]["login"] != AUTOMATISMO or nomi & FERMI:
+            continue
+        if not segno:
+            print(f"   scheda {numero}: non trovo il segno del pacchetto nel testo della scheda, la salto")
             continue
         nome, impronta = segno.group(1), segno.group(2)
+        if nome.startswith("zz-prova") and not PROVA:
+            print(f"   scheda {numero}: {nome} è un pacchetto di prova, in un giro vero non esce mai")
+            continue
         cartella = Path("coda", nome)
         if not (cartella / "post.json").exists() or Path("pubblicati", f"{nome}.json").exists():
             continue
@@ -134,7 +140,7 @@ def giro_dei_post(adesso: datetime) -> None:
                                "Rispondi a questa email con `approva`, `rifare: nota` oppure `scarta`. Senza risposta non esce.")
                 metti(numero, "promemoria")
         elif adesso >= uscita:
-            if impronta != f"{dati.get('sha256_jpeg', '')[:16]}-{dati.get('impronta_approvata', '')}":
+            if impronta != f"{dati.get('sha256_jpeg', '')[:16]}-{dati.get('impronta_approvata', '')}" or segno.group(3) != dati["esce_il_utc"]:
                 print(f"   scheda {numero}: approvazione data a una versione diversa, non pubblico")
                 continue
             print(f"   scheda {numero}: è ora di pubblicare {nome}")
