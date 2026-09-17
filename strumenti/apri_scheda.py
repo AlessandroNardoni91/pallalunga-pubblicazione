@@ -46,10 +46,15 @@ def testo_scheda(nome: str, d: dict) -> str:
         quando = datetime.fromisoformat(d["esce_il"])
         giorno = ["lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato", "domenica"][quando.weekday()]
         uscita = f"{giorno} {quando:%d/%m/%Y} alle {quando:%H:%M} (ora italiana)"
+    controlli = ""
+    if d.get("controlli_fatti"):
+        controlli = "\n**Controlli automatici superati:** " + "; ".join(d["controlli_fatti"]) + ".\n"
+    if d.get("avvisi"):
+        controlli += "\n**Avvisi del controllo automatico (non bloccano, ma guardali):**\n" + "\n".join("- " + a for a in d["avvisi"]) + "\n"
     return f"""@{PROPRIETARIA} c'è un post da approvare: **{d.get('titolo', nome)}**
 
 **Uscita prevista:** {uscita}
-
+{controlli}
 ![Il post]({immagine})
 
 ### Didascalia, esattamente come uscirebbe
