@@ -25,6 +25,22 @@ AUTOMATISMO = "github-actions[bot]"
 DECISIONI = {"approva": "approvato", "rifare": "da-rifare", "scarta": "scartato"}
 
 
+def pulisci(testo: str) -> list[str]:
+    """Le righe scritte davvero da lei. I programmi di posta (Gmail compreso) incollano sotto la risposta
+    l'email citata, preceduta da un'intestazione tipo «Il gio 17 set 2026, 18:59 ... ha scritto:»:
+    si butta via tutto dalla citazione in giù, intestazione compresa."""
+    righe = [r.strip() for r in testo.replace("\r", "").split("\n")]
+    citazione = next((i for i, r in enumerate(righe) if r.startswith(">")), None)
+    if citazione is not None:
+        righe = righe[:citazione]
+        while righe and not righe[-1]:
+            righe.pop()
+        if righe and righe[-1].endswith(":"):  # l'intestazione della citazione: l'ultimo paragrafo, che finisce con i due punti
+            while righe and righe[-1]:
+                righe.pop()
+    return [r for r in righe if r]
+
+
 def decidi(evento: dict, proprietaria: str) -> dict:
     """Funzione pura, provabile sul PC con eventi finti. Restituisce {'ignora': motivo} oppure
     {'decisione': 'approva'|'rifare'|'scarta'|'non_capito', 'nota': str}."""
@@ -43,8 +59,7 @@ def decidi(evento: dict, proprietaria: str) -> dict:
     if "pubblicato" in [e.get("name") for e in scheda.get("labels", [])] or "in-pubblicazione" in [e.get("name") for e in scheda.get("labels", [])]:
         return {"ignora": "post già pubblicato o in pubblicazione"}
 
-    righe = [r.strip() for r in (commento.get("body") or "").replace("\r", "").split("\n")]
-    righe = [r for r in righe if r and not r.startswith(">")]
+    righe = pulisci(commento.get("body") or "")
     if not righe:
         return {"decisione": "non_capito", "nota": ""}
     prima = righe[0].lower().strip(" .!\"'«»*`")
@@ -81,6 +96,9 @@ def main() -> int:
         print("Ignorato:", esito["ignora"])
         return 0
     numero = evento["issue"]["number"]
+    # Il commento di lei si cancella appena letto: la posta ci incolla sotto l'email citata, con dentro i suoi
+    # link personali di GitHub, e l'archivio è pubblico. La decisione resta scritta nella conferma qui sotto.
+    github("DELETE", f"/issues/comments/{evento['comment']['id']}")
     impronta = re.search(r"impronta:([\w-]+)", evento["issue"].get("body") or "")
     versione = f" (versione del post: `{impronta.group(1)}`)" if impronta else ""
     if esito["decisione"] == "non_capito":
