@@ -1,0 +1,25 @@
+name: Apri la scheda dei post in coda
+
+on:
+  push:
+    branches: [main]
+    paths: ["coda/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: apri-scheda
+  cancel-in-progress: false
+
+jobs:
+  apri:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apre o aggiorna le schede
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 strumenti/apri_scheda.py
