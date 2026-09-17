@@ -105,7 +105,13 @@ def pubblica(cartella: Path, indirizzo_immagine: str, davvero: bool = False, avv
         raise ErroreInstagram("sulla pagina c'è già un post con questa identica didascalia: non pubblico un doppione")
 
     avvisa("Instagram scarica e prepara l'immagine…")
-    contenitore = ordina(f"{conto}/media", {"image_url": indirizzo_immagine, "caption": dati["didascalia"]}, token).get("id")
+    # is_ai_generated: l'etichetta "contenuto creato con l'IA" che Instagram mostra sul post (parametro ufficiale di
+    # POST /media, letto sulla documentazione Meta il 17/09/2026). Decisione di Alena: sempre attiva. Un pacchetto
+    # può spegnerla solo scrivendo "contenuto_ia": false nel suo post.json.
+    campi = {"image_url": indirizzo_immagine, "caption": dati["didascalia"]}
+    if dati.get("contenuto_ia", True):
+        campi["is_ai_generated"] = "true"
+    contenitore = ordina(f"{conto}/media", campi, token).get("id")
     if not contenitore:
         raise ErroreInstagram("Instagram non ha restituito il contenitore")
     stato = ""
