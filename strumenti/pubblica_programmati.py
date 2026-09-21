@@ -36,7 +36,7 @@ PROPRIETARIA = os.environ["GITHUB_REPOSITORY_OWNER"]
 VERSIONE = os.environ["GITHUB_SHA"]
 PROVA = os.environ.get("PROVA") == "1"
 AUTOMATISMO = "github-actions[bot]"
-FINESTRA_ORE = 2
+FINESTRA_ORE = 6  # GitHub fa 7-8 giri al giorno, non 96: buco più lungo visto 5 ore e 2 minuti (misura 17-21/09/2026)
 PROMEMORIA_ORE = 3
 FERMI = {"in-pubblicazione", "pubblicato", "errore", "scaduto"}
 
