@@ -5,7 +5,9 @@
   "caratteri": 973,
   "hashtag": 7,
   "avvisi": [
-    "foto di paulo-dybala: origine «uefa», non è la foto ufficiale del club"
+    "foto di paulo-dybala: origine «uefa», non è la foto ufficiale del club",
+    "grafica: la scritta «“Ha fatto bene a lasciare l'Inter” (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "grafica: la scritta «“A 41 anni è ancora indispensabile” (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto"
   ],
   "controlli_fatti": [
     "regole di scrittura della didascalia",
@@ -17,11 +19,11 @@
     "numeri della didascalia rintracciabili nelle fonti",
     "scheda delle fonti più recente dell'ultima giornata"
   ],
-  "impronta_approvata": "d7940e331fa71ee6",
+  "impronta_approvata": "fe78dab5d19f97b3",
   "approvata_il": null,
-  "sha256_jpeg": "8e57b6eee790e899ebb839f148b40cefe8860dd20cd8a16c40d5241981fdf881",
-  "peso_jpeg_byte": 526793,
+  "sha256_jpeg": "91dd2c764615c8f729e9d127273f37fea58d6ca10d01e8d8ae4f9d37ad73ab98",
+  "peso_jpeg_byte": 586162,
   "esce_il": "2026-09-29T18:30+02:00",
   "esce_il_utc": "2026-09-29T16:30+00:00",
-  "preparato_il": "2026-09-24T14:59:48"
+  "preparato_il": "2026-09-24T15:39:49"
 }
