@@ -13,7 +13,14 @@ Prima di dare l'ordine a Instagram mette l'etichetta "in-pubblicazione": se qual
 metà, il post NON viene ritentato da solo. In caso di errore: etichetta "errore" e avviso per email.
 
 Con PROVA=1 fa tutto tranne l'ordine di pubblicare (Instagram scarica e prepara l'immagine e ci si ferma)
-e non cambia etichette né file.
+e non cambia etichette né file. In prova considera SOLO i pacchetti "zz-prova", così una prova non tocca
+mai i post veri.
+
+L'attesa (27/09/2026). GitHub non fa 96 giri al giorno ma 6-7, uno ogni 3-5 ore: i post uscivano fino a
+4 ore dopo l'ora fissata (stipendi: fissato alle 18:30, uscito alle 20:38). Per questo, se un post
+approvato deve uscire entro ATTESA_MAX dall'inizio del giro, il giro resta acceso, aspetta l'ora esatta e
+lo pubblica. Prima di pubblicare riscarica l'archivio e rilegge la scheda: se nel frattempo il post è
+cambiato o l'approvazione è stata tolta, non esce.
 
 Solo libreria standard.
 """
@@ -23,6 +30,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 import urllib.error
 import urllib.request
 from datetime import date, datetime, timedelta, timezone
@@ -33,10 +41,12 @@ import pubblica  # noqa: E402  (lo stesso file che pubblica dal PC)
 
 ARCHIVIO = os.environ["GITHUB_REPOSITORY"]
 PROPRIETARIA = os.environ["GITHUB_REPOSITORY_OWNER"]
-VERSIONE = os.environ["GITHUB_SHA"]
 PROVA = os.environ.get("PROVA") == "1"
 AUTOMATISMO = "github-actions[bot]"
 FINESTRA_ORE = 6  # GitHub fa 7-8 giri al giorno, non 96: buco più lungo visto 5 ore e 2 minuti (misura 17-21/09/2026)
+# quanto un giro può restare acceso ad aspettare: GitHub ferma un giro dopo 6 ore, il limite nel file
+# del programma di GitHub è 5 ore e 55 minuti, qui si lascia margine per pubblicare dopo l'attesa
+ATTESA_MAX = timedelta(hours=5, minutes=20)
 PROMEMORIA_ORE = 3
 FERMI = {"in-pubblicazione", "pubblicato", "errore", "scaduto"}
 
@@ -81,9 +91,14 @@ def git(*argomenti: str) -> None:
     subprocess.run(["git", *argomenti], check=True)
 
 
+def versione() -> str:
+    """La versione dell'archivio in uso adesso: dopo un'attesa è cambiata, perché l'archivio si riscarica."""
+    return subprocess.run(["git", "rev-parse", "HEAD"], capture_output=True, text=True, check=True).stdout.strip()
+
+
 def pubblica_uno(scheda: dict, nome: str, cartella: Path, dati: dict) -> None:
     numero = scheda["number"]
-    indirizzo = f"https://raw.githubusercontent.com/{ARCHIVIO}/{VERSIONE}/coda/{nome}/post.jpg"
+    indirizzo = f"https://raw.githubusercontent.com/{ARCHIVIO}/{versione()}/coda/{nome}/post.jpg"
     with urllib.request.urlopen(urllib.request.Request(indirizzo, headers={"User-Agent": "curl/8"}), timeout=30) as r:
         if hashlib.sha256(r.read()).hexdigest() != dati["sha256_jpeg"]:
             raise pubblica.ErroreInstagram("l'immagine all'indirizzo pubblico non è quella approvata")
@@ -108,7 +123,9 @@ def pubblica_uno(scheda: dict, nome: str, cartella: Path, dati: dict) -> None:
     github("PATCH", f"/issues/{numero}", {"state": "closed", "state_reason": "completed"})
 
 
-def giro_dei_post(adesso: datetime) -> None:
+def giro_dei_post(adesso: datetime) -> datetime | None:
+    """Pubblica quello che è ora di pubblicare; restituisce l'ora del prossimo post approvato che deve ancora uscire."""
+    prossime = []
     for scheda in github("GET", "/issues?state=open&labels=coda&per_page=100") or []:
         numero, nomi = scheda["number"], etichette(scheda)
         segno = re.search(r"<!-- pacchetto:(\S+) impronta:(\S+) uscita:(\S+) -->", scheda.get("body") or "")
@@ -118,6 +135,8 @@ def giro_dei_post(adesso: datetime) -> None:
             print(f"   scheda {numero}: non trovo il segno del pacchetto nel testo della scheda, la salto")
             continue
         nome, impronta = segno.group(1), segno.group(2)
+        if PROVA != nome.startswith("zz-prova"):
+            continue  # in prova solo i pacchetti di prova, nei giri veri mai
         cartella = Path("coda", nome)
         if not (cartella / "post.json").exists() or Path("pubblicati", f"{nome}.json").exists():
             continue
@@ -140,9 +159,6 @@ def giro_dei_post(adesso: datetime) -> None:
             if impronta != f"{dati.get('sha256_jpeg', '')[:16]}-{dati.get('impronta_approvata', '')}" or segno.group(3) != dati["esce_il_utc"]:
                 print(f"   scheda {numero}: approvazione data a una versione diversa, non pubblico")
                 continue
-            if nome.startswith("zz-prova") and not PROVA:
-                print(f"   scheda {numero}: {nome} è un pacchetto di prova, in un giro vero non esce mai")
-                continue
             print(f"   scheda {numero}: è ora di pubblicare {nome}")
             try:
                 pubblica_uno(scheda, nome, cartella, dati)
@@ -152,6 +168,8 @@ def giro_dei_post(adesso: datetime) -> None:
                                f"Prima di fare altro va controllato sulla pagina Instagram se il post è uscito. Errore: {errore}")
         else:
             print(f"   scheda {numero}: {nome} approvato, esce il {ora_locale}")
+            prossime.append(uscita)
+    return min(prossime, default=None)
 
 
 def giro_del_permesso() -> None:
@@ -176,12 +194,22 @@ def giro_del_permesso() -> None:
 
 
 def main() -> int:
-    adesso = datetime.now(timezone.utc)
-    print(f"Giro del {adesso:%d/%m/%Y %H:%M} (ora universale){' · PROVA, non pubblico niente' if PROVA else ''}")
+    inizio = datetime.now(timezone.utc)
+    print(f"Giro del {inizio:%d/%m/%Y %H:%M} (ora universale){' · PROVA, non pubblico niente' if PROVA else ''}")
     for nome, colore in (("scaduto", "5C6A62"), ("promemoria", "B98900")):
         github("POST", "/labels", {"name": nome, "color": colore})
-    giro_dei_post(adesso)
     giro_del_permesso()
+    while True:
+        prossima = giro_dei_post(datetime.now(timezone.utc))
+        if prossima is None or prossima - inizio > ATTESA_MAX:
+            break
+        attesa = (prossima - datetime.now(timezone.utc)).total_seconds()
+        print(f"Aspetto fino alle {prossima:%H:%M} (ora universale), cioè {max(0, attesa) / 60:.0f} minuti")
+        sys.stdout.flush()
+        if attesa > 0:
+            time.sleep(attesa + 5)
+        # dati freschi prima di pubblicare: una versione nuova del post o una decisione cambiata nel frattempo
+        git("pull", "-q", "--rebase", "origin", "main")
     return 0
 
 

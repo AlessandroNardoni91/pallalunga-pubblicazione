@@ -23,7 +23,9 @@ concurrency:
 jobs:
   pubblica:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    # il giro può restare acceso fino a 5 ore e 20 minuti ad aspettare l'ora esatta di un post (vedi
+    # ATTESA_MAX in strumenti/pubblica_programmati.py); GitHub non lascia andare oltre le 6 ore
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
         with:
