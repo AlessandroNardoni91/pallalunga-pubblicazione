@@ -3,7 +3,8 @@
 risponde all'email con approva / rifare: nota / scarta.
 
 Se il pacchetto cambia dopo che la scheda è stata aperta (impronta diversa), la scheda viene aggiornata,
-l'eventuale approvazione viene tolta e parte un nuovo avviso.
+l'eventuale approvazione viene tolta e parte un nuovo avviso con la versione nuova intera (grafica e
+didascalia), così l'email basta per decidere.
 
 Solo libreria standard. Usa il permesso temporaneo GITHUB_TOKEN che GitHub dà al programma: vale solo
 per questo archivio e solo per la durata del giro.
@@ -99,8 +100,11 @@ def main() -> None:
             for etichetta in ("approvato", "da-rifare", "scartato", "promemoria", "scaduto"):
                 if any(e["name"] == etichetta for e in scheda.get("labels", [])):
                     github("DELETE", f"/issues/{numero}/labels/{etichetta}")
-            github("POST", f"/issues/{numero}/comments", {"body": f"@{PROPRIETARIA} il post, o la sua data di uscita, è cambiato dopo la tua ultima risposta: "
-                                                                  "la decisione di prima non vale più. Riapri la scheda per vedere la versione nuova e rispondi di nuovo."})
+            # L'email nasce dal commento: ci va la versione nuova intera (grafica, didascalia, uscita),
+            # così si approva dal telefono senza aprire la scheda (richiesta di Alena del 05/10/2026).
+            resto = re.sub(r"\n?<!-- pacchetto:.*? -->\n?", "\n", corpo.split("\n", 1)[1])
+            github("POST", f"/issues/{numero}/comments", {"body": f"@{PROPRIETARIA} **versione nuova** del post **{d.get('titolo', nome)}**. "
+                                                                  "La decisione di prima non vale più: rispondi di nuovo a questa email.\n" + resto})
             print(f"scheda {numero} aggiornata per {nome}")
         else:
             print(f"{nome}: scheda già aperta e invariata")
