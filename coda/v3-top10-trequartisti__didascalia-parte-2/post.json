@@ -1,0 +1,27 @@
+{
+  "id": "v3-top10-trequartisti/didascalia-parte-2.md",
+  "titolo": "Top 10 trequartisti, parte 2 (dal 5° all'1°)",
+  "didascalia": "I 10 trequartisti più forti della Serie A, seconda puntata 👀 Mora è quinto con il numero più basso di questa puntata, e lo so che non vi torna.\n\nIl metodo è lo stesso dei centrocampisti: quotazioni del Fantacalcio, valore più alto toccato sul mercato e pagelle dei giornali delle ultime due stagioni, più un po' di peso a quanto uno gioca titolare e a quanto vale oggi. Il numero accanto al nome sono i gol più gli assist in campionato nel 2025/26.\n\nMora l'anno scorso era al Porto, 1 gol e 1 assist in 28 partite di Liga portoghese, e alla Roma è già a 1 gol in 171 minuti. Baturina al Como ha fatto 6 gol e 3 assist partendo titolare 17 volte su 29. De Bruyne ha saltato 20 partite per infortunio e ha comunque chiuso con 5 gol e 2 assist. Pulisic è secondo con 8 gol e 4 assist, ma quest'anno ha giocato 114 minuti in tutto ed è rimasto in panchina 3 volte su 5. E poi c'è Nico Paz, 19 fra gol e assist, il numero più alto di tutti e dieci.\n\nNico Paz o Pulisic: chi pesa di più sulla Serie A fino a Natale? ⬇️\n\n#SerieA #calcio #trequartisti #Top10 #Roma #Milan #Como #pallalungaepedalare",
+  "caratteri": 1090,
+  "hashtag": 8,
+  "avvisi": [
+    "foto di christian-pulisic: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del milan 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "d21aabc3b49cd2b0",
+  "approvata_il": null,
+  "sha256_jpeg": "e5e7a438908e663b2443db813a50759f6a54aa1384e97598a77f1e0aea69bb20",
+  "peso_jpeg_byte": 553945,
+  "esce_il": "2026-10-12T18:30+00:00",
+  "esce_il_utc": "2026-10-12T18:30+00:00",
+  "preparato_il": "2026-10-05T11:30:18"
+}
