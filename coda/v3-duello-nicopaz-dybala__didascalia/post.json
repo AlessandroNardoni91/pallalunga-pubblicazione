@@ -1,0 +1,27 @@
+{
+  "id": "v3-duello-nicopaz-dybala/didascalia.md",
+  "titolo": "Duello di vigilia di Como-Roma: Nico Paz o Dybala",
+  "didascalia": "Como-Roma di domenica a mezzogiorno e mezzo ha due giocatori che la possono decidere da soli 👀 Nico Paz ha 22 anni, Dybala ne ha 32, e in queste cinque giornate hanno giocato praticamente gli stessi minuti.\n\nHo guardato solo la Serie A, quest'anno e l'anno scorso: gol, assist e minuti. Niente coppe e niente nazionali, perché la domanda riguarda il campionato.\n\nDybala ha servito quattro assist in cinque partite e non ha ancora segnato. Nico Paz un gol e un assist, ma l'anno scorso aveva chiuso a diciannove fra gol e assist contro i nove dell'argentino della Roma, con più del doppio dei minuti in campo, 2.886 contro 1.356. Uno ha retto una stagione intera, l'altro quando sta bene ti ribalta una partita in dieci minuti. E quest'anno sono pari davvero: 420 minuti contro 407, sempre titolari tutti e due.\n\nDa qui a Natale, chi pesa di più sulla Serie A? ⬇️\n\n#SerieA #calcio #Como #Roma #Dybala #pallalungaepedalare",
+  "caratteri": 920,
+  "hashtag": 6,
+  "avvisi": [
+    "foto di nico-paz: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del como 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "afd43f753494b72c",
+  "approvata_il": null,
+  "sha256_jpeg": "62872df5ff6d62171fef6f1563d34dd9df144cd17e99104e68f9e294d307d9f3",
+  "peso_jpeg_byte": 475365,
+  "esce_il": "2026-10-10T18:30+02:00",
+  "esce_il_utc": "2026-10-10T16:30+00:00",
+  "preparato_il": "2026-10-06T03:47:02"
+}
