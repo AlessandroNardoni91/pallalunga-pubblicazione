@@ -1,0 +1,27 @@
+{
+  "id": "v3-numeri-bastoni/didascalia.md",
+  "titolo": "Il migliore della Serie A nelle 4 partite dell'Italia: Bastoni in numeri",
+  "didascalia": "Il migliore della Serie A nelle quattro partite dell'Italia è un difensore centrale 👀 Bastoni ha segnato due gol in Nazionale e zero in campionato.\n\nHo guardato solo le partite azzurre dal 25 settembre al 5 ottobre: gol, minuti e i voti delle pagelle di Sky. Donnarumma e Calafiori, i due migliori della sosta, restano fuori perché in Serie A non giocano.\n\nBastoni ne ha giocate tre su quattro, sempre dal primo all'ultimo minuto, e in due ha segnato: al 9' a Istanbul nel 4-1 alla Turchia e al 68' a Saint-Denis, il pareggio con la Francia. Nessuno in quelle quattro partite è andato oltre i due gol. A quota due c'è anche Pio Esposito, che le ha giocate tutte e quattro, ma con molti meno minuti e con 6,50 di media voto contro il 6,83 di Bastoni. E qui la sparo: con l'Inter in cinque giornate è a zero gol in 392 minuti, in Nazionale ne fa due in tre partite. Qualcosa, a Milano, non gli stanno chiedendo.\n\nBastoni o Pio Esposito, chi ha fatto la sosta migliore? ⬇️\n\n#SerieA #calcio #Inter #Nazionale #NationsLeague #pallalungaepedalare",
+  "caratteri": 1040,
+  "hashtag": 6,
+  "avvisi": [
+    "foto di alessandro-bastoni: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del inter 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "b1e9f7b604ed3aae",
+  "approvata_il": null,
+  "sha256_jpeg": "6da631ce1ef3454695be3f6caef5bf4eb0fcd3a9010802db8bbf29476bce0052",
+  "peso_jpeg_byte": 468143,
+  "esce_il": "2026-10-07T18:30+02:00",
+  "esce_il_utc": "2026-10-07T16:30+00:00",
+  "preparato_il": "2026-10-06T03:43:27"
+}
