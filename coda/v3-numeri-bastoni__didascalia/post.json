@@ -1,8 +1,8 @@
 {
   "id": "v3-numeri-bastoni/didascalia.md",
   "titolo": "Il migliore della Serie A nelle 4 partite dell'Italia: Bastoni in numeri",
-  "didascalia": "Il migliore della sosta azzurra, fra quelli che giocano in Serie A, è Bastoni 👀 Due gol in Nazionale, zero in campionato.\n\nContano solo le quattro partite dell'Italia fra il 25 settembre e il 5 ottobre: gol, minuti in campo e voti delle pagelle di Sky. Donnarumma e Calafiori hanno fatto meglio di tutti, ma giocano al Manchester City e all'Arsenal, e qui si parla di Serie A.\n\nBastoni ne ha giocate tre su quattro, sempre dall'inizio alla fine, e in due ha segnato: al 9' a Istanbul, nel 4-1 alla Turchia, e al 68' a Saint-Denis, il gol del pareggio con la Francia. Nessuno ha segnato più di due gol in quelle partite. Ci arriva anche Pio Esposito, che le ha giocate tutte e quattro, ma con molti meno minuti e con una media voto di 6,50 contro il 6,83 di Bastoni.\n\nPoi guardi il campionato e non ci credi: cinque giornate, 392 minuti con l'Inter e ancora zero gol. In Nazionale ne ha fatti due in tre partite. A Milano, evidentemente, gli chiedono altro.\n\nBastoni o Pio Esposito, chi ha fatto la sosta migliore? ⬇️\n\n#SerieA #calcio #Inter #Nazionale #NationsLeague #pallalungaepedalare",
-  "caratteri": 1087,
+  "didascalia": "Il migliore della Serie A nelle quattro partite dell'Italia è un difensore centrale 👀 Bastoni in dieci giorni di Nazionale ha segnato due gol, in cinque giornate di campionato è ancora a zero.\n\nHo guardato solo quelle quattro partite di Nations League, dal 25 settembre al 5 ottobre: gol, minuti e i voti delle pagelle di Sky. Fuori dal conto Donnarumma e Calafiori, che i voti più alti li hanno presi loro ma in Serie A non giocano.\n\nBastoni ne ha giocate tre su quattro e le ha giocate tutte intere. In due ha segnato: al 9' nel 4-1 in Turchia e al 68' in Francia, il gol dell'1-1. Oltre i due gol non è andato nessuno, e l'altro a quota due è Pio Esposito, che però le sue quattro le ha fatte a spezzoni, con molti meno minuti e 6,50 di media voto contro il 6,83 di Bastoni. Ok, la sparo: un centrale che con l'Inter sta a zero gol in 392 minuti e con l'Italia ne fa due in tre partite, forse a Milano gli stanno chiedendo metà di quello che sa fare.\n\nBastoni o Pio Esposito, chi ha fatto la sosta migliore? ⬇️\n\n#SerieA #calcio #Inter #Nazionale #NationsLeague #pallalungaepedalare",
+  "caratteri": 1084,
   "hashtag": 6,
   "avvisi": [
     "foto di alessandro-bastoni: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del inter 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)",
@@ -19,11 +19,11 @@
     "numeri della didascalia rintracciabili nelle fonti",
     "scheda delle fonti più recente dell'ultima giornata"
   ],
-  "impronta_approvata": "5a22ab233577c3f9",
+  "impronta_approvata": "680ae88517cc2e1c",
   "approvata_il": null,
   "sha256_jpeg": "bdbcd5adc721ad25a8725166a04c33723aa12f10134214f98cb738ad9ae998a0",
   "peso_jpeg_byte": 465021,
   "esce_il": "2026-10-07T18:30+02:00",
   "esce_il_utc": "2026-10-07T16:30+00:00",
-  "preparato_il": "2026-10-07T07:13:59"
+  "preparato_il": "2026-10-07T07:15:05"
 }
