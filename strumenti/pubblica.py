@@ -88,6 +88,19 @@ def cerca_su_instagram(didascalia: str, token: str, conto: str) -> dict | None:
     return next((m for m in ultimi.get("data", []) if (m.get("caption") or "").strip() == didascalia.strip()), None)
 
 
+def aspetta_contenitore(contenitore: str, token: str, cosa: str) -> str:
+    """Instagram scarica e prepara l'immagine con calma: si chiede lo stato finché non è più IN_PROGRESS."""
+    stato = ""
+    for _ in range(8):
+        stato = chiedi(contenitore, {"fields": "status_code"}, token).get("status_code", "")
+        if stato != "IN_PROGRESS":
+            break
+        time.sleep(6)
+    if stato != "FINISHED":
+        raise ErroreInstagram(f"il contenitore ({cosa}) non è pronto (stato: {stato or 'nessuno'}): non pubblico")
+    return stato
+
+
 def pubblica(cartella: Path, indirizzo_immagine: str, davvero: bool = False, avvisa=print) -> dict:
     dati = leggi_pacchetto(cartella)
     segno = cartella / "in-pubblicazione.json"
@@ -104,27 +117,40 @@ def pubblica(cartella: Path, indirizzo_immagine: str, davvero: bool = False, avv
     if davvero and cerca_su_instagram(dati["didascalia"], token, conto):
         raise ErroreInstagram("sulla pagina c'è già un post con questa identica didascalia: non pubblico un doppione")
 
-    avvisa("Instagram scarica e prepara l'immagine…")
     # is_ai_generated: l'etichetta "contenuto creato con l'IA" che Instagram mostra sul post (parametro ufficiale di
     # POST /media, letto sulla documentazione Meta il 17/09/2026). Decisione di Alena: sempre attiva. Un pacchetto
     # può spegnerla solo scrivendo "contenuto_ia": false nel suo post.json.
-    campi = {"image_url": indirizzo_immagine, "caption": dati["didascalia"]}
+    campi = {"caption": dati["didascalia"]}
     if dati.get("contenuto_ia", True):
         campi["is_ai_generated"] = "true"
+    pagine = dati.get("pagine")
+    if pagine:
+        # CAROSELLO (documentazione Meta letta il 07/10/2026): un contenitore per ogni pagina con
+        # is_carousel_item=true, poi il contenitore del carosello con media_type=CAROUSEL, children = i loro
+        # numeri separati da virgole, la didascalia e is_ai_generated (sulle pagine darebbe errore). Massimo 10
+        # pagine; conta come un post solo nel limite giornaliero. Le pagine stanno accanto a post.jpg, nella
+        # stessa versione dell'archivio.
+        base = indirizzo_immagine.rsplit("/", 1)[0]
+        figli = []
+        for numero, p in enumerate(pagine, 1):
+            avvisa(f"Instagram scarica e prepara la pagina {numero} di {len(pagine)}…")
+            figlio = ordina(f"{conto}/media", {"image_url": f"{base}/{p['file']}", "is_carousel_item": "true"}, token).get("id")
+            if not figlio:
+                raise ErroreInstagram(f"Instagram non ha restituito il contenitore della pagina {numero}")
+            aspetta_contenitore(figlio, token, f"pagina {numero}")
+            figli.append(figlio)
+        campi.update({"media_type": "CAROUSEL", "children": ",".join(figli)})
+    else:
+        avvisa("Instagram scarica e prepara l'immagine…")
+        campi["image_url"] = indirizzo_immagine
     contenitore = ordina(f"{conto}/media", campi, token).get("id")
     if not contenitore:
         raise ErroreInstagram("Instagram non ha restituito il contenitore")
-    stato = ""
-    for _ in range(5):
-        stato = chiedi(contenitore, {"fields": "status_code"}, token).get("status_code", "")
-        if stato != "IN_PROGRESS":
-            break
-        time.sleep(6)
-    if stato != "FINISHED":
-        raise ErroreInstagram(f"il contenitore non è pronto (stato: {stato or 'nessuno'}): non pubblico")
+    stato = aspetta_contenitore(contenitore, token, "carosello" if pagine else "immagine")
     if not davvero:
-        avvisa("Prova generale riuscita: l'immagine è stata scaricata e preparata da Instagram. Non ho pubblicato.")
-        return {"prova_generale": True, "contenitore": contenitore, "stato": stato}
+        cosa = f"le {len(pagine)} pagine sono state scaricate e preparate" if pagine else "l'immagine è stata scaricata e preparata"
+        avvisa(f"Prova generale riuscita: {cosa} da Instagram. Non ho pubblicato.")
+        return {"prova_generale": True, "contenitore": contenitore, "stato": stato, "pagine": len(pagine or [1])}
 
     segno.write_text(json.dumps({"contenitore": contenitore, "quando": datetime.now().isoformat(timespec="seconds")}), encoding="utf-8")
     avvisa("Pubblico…")
@@ -139,7 +165,8 @@ def pubblica(cartella: Path, indirizzo_immagine: str, davvero: bool = False, avv
         time.sleep(4)
     ricevuta = {"id": dati["id"], "titolo": dati["titolo"], "id_instagram": id_post, "indirizzo": letto.get("permalink", ""),
                 "pubblicato_il": letto.get("timestamp") or datetime.now().isoformat(timespec="seconds"),
-                "didascalia_uguale": (letto.get("caption") or "").strip() == dati["didascalia"].strip()}
+                "didascalia_uguale": (letto.get("caption") or "").strip() == dati["didascalia"].strip(),
+                **({"pagine": len(dati["pagine"])} if dati.get("pagine") else {})}
     (cartella / "pubblicato.json").write_text(json.dumps(ricevuta, ensure_ascii=False, indent=2), encoding="utf-8")
     segno.unlink()
     if not ricevuta["indirizzo"]:
@@ -156,6 +183,11 @@ def leggi_pacchetto(cartella: Path) -> dict:
         raise ErroreInstagram("nella didascalia c'è la sezione interna «Verificato su»")
     if hashlib.sha256(jpg.read_bytes()).hexdigest() != dati.get("sha256_jpeg"):
         raise ErroreInstagram("post.jpg non è più quello preparato: va rifatto il pacchetto")
+    for p in dati.get("pagine") or []:
+        if not (cartella / p["file"]).exists() or hashlib.sha256((cartella / p["file"]).read_bytes()).hexdigest() != p["sha256"]:
+            raise ErroreInstagram(f"{p['file']} non è più quella preparata: va rifatto il pacchetto")
+    if len(dati.get("pagine") or []) > 10:
+        raise ErroreInstagram("un carosello può avere al massimo 10 pagine")
     return dati
 
 

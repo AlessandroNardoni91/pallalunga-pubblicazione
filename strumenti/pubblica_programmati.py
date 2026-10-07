@@ -98,10 +98,13 @@ def versione() -> str:
 
 def pubblica_uno(scheda: dict, nome: str, cartella: Path, dati: dict) -> None:
     numero = scheda["number"]
-    indirizzo = f"https://raw.githubusercontent.com/{ARCHIVIO}/{versione()}/coda/{nome}/post.jpg"
-    with urllib.request.urlopen(urllib.request.Request(indirizzo, headers={"User-Agent": "curl/8"}), timeout=30) as r:
-        if hashlib.sha256(r.read()).hexdigest() != dati["sha256_jpeg"]:
-            raise pubblica.ErroreInstagram("l'immagine all'indirizzo pubblico non è quella approvata")
+    base = f"https://raw.githubusercontent.com/{ARCHIVIO}/{versione()}/coda/{nome}"
+    indirizzo = f"{base}/post.jpg"
+    # un carosello (07/10/2026) ha anche post-2.jpg, post-3.jpg...: si controllano tutte le pagine
+    for p in dati.get("pagine") or [{"file": "post.jpg", "sha256": dati["sha256_jpeg"]}]:
+        with urllib.request.urlopen(urllib.request.Request(f"{base}/{p['file']}", headers={"User-Agent": "curl/8"}), timeout=30) as r:
+            if hashlib.sha256(r.read()).hexdigest() != p["sha256"]:
+                raise pubblica.ErroreInstagram(f"l'immagine {p['file']} all'indirizzo pubblico non è quella approvata")
     metti(numero, "in-pubblicazione")
     esito = pubblica.pubblica(cartella, indirizzo, davvero=not PROVA)
     if PROVA:

@@ -1,0 +1,65 @@
+{
+  "id": "v3-20-squadre-20-venezia/didascalia.md",
+  "titolo": "Le 20 squadre, 20ª: il Venezia",
+  "didascalia": "Si parte dal fondo. L'anno scorso il Venezia ha vinto la Serie B con 82 punti, senza passare dai play-off. In Serie A ha perso le prime cinque partite: 4 gol fatti, 13 subiti, zero punti.\n\nIn estate ha speso 44,5 milioni. Il più caro è Akor Adams, preso dal Siviglia per 16 milioni, che finora ha segnato una volta. Il guaio più grosso però è l'infortunio di Busio: il capitano, l'unico con due assist, si è fatto male contro la Fiorentina e si parla di due mesi di stop.\n\nNella nostra classifica della forza delle rose è ultimo, dietro Lecce e Monza. Stasera alle 18:30 va a Bergamo contro l'Atalanta a cercare il primo punto.\n\nIl Venezia si salva? ⬇️\n\n#SerieA #calcio #Venezia #LeVentiSquadre #Fantacalcio #pallalungaepedalare",
+  "pagine": [
+    {
+      "file": "post.jpg",
+      "sha256": "bd3c5e00924a5cd579ab396d763dfd29f97213ec9613a90f81734cf42c647614"
+    },
+    {
+      "file": "post-2.jpg",
+      "sha256": "a958f99272360bfbacf811e9a5d3c0c9702e98150e9dab9e5175ee76b509c611"
+    },
+    {
+      "file": "post-3.jpg",
+      "sha256": "89868d4f251733182f7b3973ad5df33e14951323e88bc609f09a7b6f46b8d85e"
+    },
+    {
+      "file": "post-4.jpg",
+      "sha256": "b1bca79066fa429cb88a5e123b460226fe6c640706ca907f4167e667b42f755d"
+    },
+    {
+      "file": "post-5.jpg",
+      "sha256": "5bb4a6714ecef47132ceef1edb9f113cf69fe2199477f2df8aacb2ef1f482aa2"
+    },
+    {
+      "file": "post-6.jpg",
+      "sha256": "52da4a2e6d71127406c9329487e6e4ebc02aa640a4ab1026af22ce7085a6badc"
+    }
+  ],
+  "caratteri": 728,
+  "hashtag": 6,
+  "avvisi": [
+    "pagina 1: grafica: la scritta «dopo le prime 5 giornate. (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 1: foto akor-adams-sagoma.png ingrandita 1.8 volte: può risultare sgranata",
+    "pagina 2: grafica: la scritta «82 punti, promosso direttamente senza pa (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 2: grafica: la scritta «dallo Sparta Praga, 7,5 milioni (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 4: grafica: la scritta «È l'acquisto più caro dell'estate, preso (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 4: grafica: la scritta «1 gol in 413 minuti (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 4: grafica: la scritta «È quello che ha fatto l'anno scorso in B (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 4: grafica: la scritta «. Con Adams è la coppia d'attacco titola (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 4: grafica: la scritta «, nessuno nel Venezia ne ha fatti di più (3 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 5: grafica: la scritta «La rosa più debole e 0 punti in 5 partit (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 5: grafica: la scritta «Nelle 33 partite che restano (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 5: grafica: la scritta «Se Adams non segna e Busio resta fuori a (3 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 5: grafica: la scritta «Salvezza con i gol di Adams e Yeboah (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "0d8392536d4ecf9b",
+  "approvata_il": null,
+  "sha256_jpeg": "bd3c5e00924a5cd579ab396d763dfd29f97213ec9613a90f81734cf42c647614",
+  "peso_jpeg_byte": 378588,
+  "esce_il": "2026-10-12T12:30+02:00",
+  "esce_il_utc": "2026-10-12T10:30+00:00",
+  "preparato_il": "2026-10-07T12:02:15"
+}

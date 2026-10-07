@@ -40,7 +40,14 @@ def github(metodo: str, percorso: str, dati: dict | None = None):
 
 
 def testo_scheda(nome: str, d: dict) -> str:
-    immagine = f"https://raw.githubusercontent.com/{ARCHIVIO}/{VERSIONE}/coda/{nome}/post.jpg"
+    base = f"https://raw.githubusercontent.com/{ARCHIVIO}/{VERSIONE}/coda/{nome}"
+    # un carosello (07/10/2026) mostra tutte le pagine, una sotto l'altra, così si giudica dall'email
+    pagine = d.get("pagine") or [{"file": "post.jpg"}]
+    if len(pagine) > 1:
+        immagini = f"**Carosello di {len(pagine)} pagine**, nell'ordine in cui si sfogliano:\n\n" + "\n\n".join(
+            f"Pagina {n}\n\n![Pagina {n}]({base}/{p['file']})" for n, p in enumerate(pagine, 1))
+    else:
+        immagini = f"![Il post]({base}/post.jpg)"
     didascalia = "\n".join("> " + riga for riga in d["didascalia"].splitlines())
     uscita = "non ancora fissata"
     if d.get("esce_il"):  # "2026-09-30T18:30+02:00" -> "mercoledì 30/09/2026 alle 18:30 (ora italiana)"
@@ -56,7 +63,7 @@ def testo_scheda(nome: str, d: dict) -> str:
 
 **Uscita prevista:** {uscita}
 {controlli}
-![Il post]({immagine})
+{immagini}
 
 ### Didascalia, esattamente come uscirebbe
 
