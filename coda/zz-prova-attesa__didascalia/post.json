@@ -1,0 +1,21 @@
+{
+  "id": "zz-prova-attesa/didascalia.md",
+  "titolo": "Prova tecnica dell'orario (post finto, da ignorare)",
+  "didascalia": "Questa è una prova tecnica dell'orario 👀 Serve a controllare che il programma di GitHub, quando trova un post approvato che deve uscire entro qualche ora, resti acceso e aspetti l'ora esatta invece di pubblicare in ritardo al giro successivo.\n\nIl testo è lungo quanto una didascalia vera perché il controllo automatico pretende almeno cinquecento caratteri, e una prova con un testo troppo corto verrebbe fermata prima ancora di cominciare. Per questo c'è un paragrafo in più che non dice niente di interessante.\n\nA questa email non serve rispondere: l'approvazione viene simulata.\n\nSe leggi queste righe su Instagram qualcosa è andato storto ⬇️\n\n#SerieA #calcio #prova #collaudo #pallalungaepedalare",
+  "caratteri": 700,
+  "hashtag": 5,
+  "avvisi": [
+    "la grafica zz-prova-attesa/post.png non è nell'elenco di generatore/ridisegna_tutto.py: i controlli su grafica, numeri in mostra e foto sono saltati"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "numeri della didascalia rintracciabili nelle fonti"
+  ],
+  "impronta_approvata": "0510bb6c61f029e1",
+  "approvata_il": null,
+  "sha256_jpeg": "dc4e169f722590cd5185c1714afaa181e20ead6d62decfe1fb88c54ae64a415f",
+  "peso_jpeg_byte": 73484,
+  "esce_il": "2026-12-31T18:30+01:00",
+  "esce_il_utc": "2026-12-31T17:30+00:00",
+  "preparato_il": "2026-10-07T09:06:19"
+}
