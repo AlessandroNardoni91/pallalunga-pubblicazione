@@ -1,8 +1,8 @@
 {
   "id": "v3-numeri-bastoni/didascalia.md",
   "titolo": "Il migliore della Serie A nelle 4 partite dell'Italia: Bastoni in numeri",
-  "didascalia": "Il migliore della Serie A nelle quattro partite dell'Italia è un difensore centrale 👀 Bastoni ha segnato due gol in Nazionale e zero in campionato.\n\nHo guardato solo le partite azzurre dal 25 settembre al 5 ottobre: gol, minuti e i voti delle pagelle di Sky. Donnarumma e Calafiori, i due migliori della sosta, restano fuori perché in Serie A non giocano.\n\nBastoni ne ha giocate tre su quattro, sempre dal primo all'ultimo minuto, e in due ha segnato: al 9' a Istanbul nel 4-1 alla Turchia e al 68' a Saint-Denis, il pareggio con la Francia. Nessuno in quelle quattro partite è andato oltre i due gol. A quota due c'è anche Pio Esposito, che le ha giocate tutte e quattro, ma con molti meno minuti e con 6,50 di media voto contro il 6,83 di Bastoni. E qui la sparo: con l'Inter in cinque giornate è a zero gol in 392 minuti, in Nazionale ne fa due in tre partite. Qualcosa, a Milano, non gli stanno chiedendo.\n\nBastoni o Pio Esposito, chi ha fatto la sosta migliore? ⬇️\n\n#SerieA #calcio #Inter #Nazionale #NationsLeague #pallalungaepedalare",
-  "caratteri": 1040,
+  "didascalia": "Il migliore della Serie A nelle quattro partite dell'Italia è un difensore centrale 👀 Bastoni in Nazionale ha segnato due gol, in campionato è ancora a zero.\n\nHo guardato soltanto le partite azzurre dal 25 settembre al 5 ottobre, con i gol, i minuti e i voti delle pagelle di Sky. Donnarumma e Calafiori sono stati i migliori di tutti, ma giocano al Manchester City e all'Arsenal, quindi restano fuori.\n\nDi quelle quattro Bastoni ne ha giocate tre, sempre dal primo all'ultimo minuto, e in due ha segnato: al 9' a Istanbul, nel 4-1 alla Turchia, e al 68' a Saint-Denis, il gol del pareggio con la Francia. Più di due gol non li ha fatti nessuno. A quota due c'è anche Pio Esposito, che le ha giocate tutte e quattro, ma con molti meno minuti e con 6,50 di media voto contro il 6,83 di Bastoni.\n\nE ok, la sparo: in cinque giornate di campionato Bastoni è a zero gol in 392 minuti, in Nazionale ne ha fatti due in tre partite. Forse a Milano gli chiedono un altro lavoro.\n\nBastoni o Pio Esposito, chi ha fatto la sosta migliore? ⬇️\n\n#SerieA #calcio #Inter #Nazionale #NationsLeague #pallalungaepedalare",
+  "caratteri": 1100,
   "hashtag": 6,
   "avvisi": [
     "foto di alessandro-bastoni: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del inter 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)",
@@ -19,11 +19,11 @@
     "numeri della didascalia rintracciabili nelle fonti",
     "scheda delle fonti più recente dell'ultima giornata"
   ],
-  "impronta_approvata": "352e9104f8fcf0e9",
+  "impronta_approvata": "ad148ef41e34a7cf",
   "approvata_il": null,
-  "sha256_jpeg": "07f1b51b3b8257989230e5f37780c651bbff984fb9fe7a8d5a1ffd4e414a7ac8",
-  "peso_jpeg_byte": 490514,
+  "sha256_jpeg": "bdbcd5adc721ad25a8725166a04c33723aa12f10134214f98cb738ad9ae998a0",
+  "peso_jpeg_byte": 465021,
   "esce_il": "2026-10-07T18:30+02:00",
   "esce_il_utc": "2026-10-07T16:30+00:00",
-  "preparato_il": "2026-10-07T08:58:20"
+  "preparato_il": "2026-10-07T07:12:01"
 }
