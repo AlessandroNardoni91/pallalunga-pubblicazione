@@ -1,34 +1,34 @@
 {
   "id": "v3-20-squadre-20-venezia/didascalia.md",
   "titolo": "Le 20 squadre, 20ª: il Venezia",
-  "didascalia": "Si parte dal fondo. L'anno scorso il Venezia ha vinto la Serie B con 82 punti, senza passare dai play-off. In Serie A ha perso le prime cinque partite: 4 gol fatti, 13 subiti, zero punti.\n\nIn estate ha speso 44,5 milioni. Il più caro è Akor Adams, preso dal Siviglia per 16 milioni, che finora ha segnato una volta. Il guaio più grosso però è l'infortunio di Busio: il capitano, l'unico con due assist, si è fatto male contro la Fiorentina e si parla di due mesi di stop.\n\nNella nostra classifica della forza delle rose è ultimo, dietro Lecce e Monza. Stasera alle 18:30 va a Bergamo contro l'Atalanta a cercare il primo punto.\n\nIl Venezia si salva? ⬇️\n\n#SerieA #calcio #Venezia #LeVentiSquadre #Fantacalcio #pallalungaepedalare",
+  "didascalia": "Si parte dal fondo. L'anno scorso il Venezia ha vinto la Serie B con 82 punti, senza passare dai play-off. In Serie A ha perso le prime cinque partite: 4 gol fatti, 13 subiti, zero punti.\n\nIn estate ha speso 44,5 milioni. Il più caro è Akor Adams, preso dal Siviglia per 16 milioni, che finora ha segnato una volta. Il guaio più grosso però è l'infortunio di Busio: il capitano, l'unico con due assist, si è fatto male contro la Fiorentina l'11 settembre e torna solo nella seconda metà di ottobre.\n\nNella nostra classifica della forza delle rose è ultimo, dietro Lecce e Monza. Stasera alle 18:30 va a Bergamo contro l'Atalanta a cercare il primo punto.\n\nIl Venezia si salva? ⬇️\n\n#SerieA #calcio #Venezia #LeVentiSquadre #Fantacalcio #pallalungaepedalare",
   "pagine": [
     {
       "file": "post.jpg",
-      "sha256": "bd3c5e00924a5cd579ab396d763dfd29f97213ec9613a90f81734cf42c647614"
+      "sha256": "b1de313d891a396cbd1cd952140be7a91419daf28a0fb4d01e289bb85dd99481"
     },
     {
       "file": "post-2.jpg",
-      "sha256": "a958f99272360bfbacf811e9a5d3c0c9702e98150e9dab9e5175ee76b509c611"
+      "sha256": "9a52b34c67e04b7f68bfe654207136826ae37f211c23852b6e499a25ed95dd8b"
     },
     {
       "file": "post-3.jpg",
-      "sha256": "89868d4f251733182f7b3973ad5df33e14951323e88bc609f09a7b6f46b8d85e"
+      "sha256": "08bb3fcf7c774bb2acca94eeeb0653552e853f75fcfdfe2250b868f77e8fa7e0"
     },
     {
       "file": "post-4.jpg",
-      "sha256": "b1bca79066fa429cb88a5e123b460226fe6c640706ca907f4167e667b42f755d"
+      "sha256": "f92737aa257bd0a7b0563398999fb12c53b061a67935fc84acb630e2245563e9"
     },
     {
       "file": "post-5.jpg",
-      "sha256": "5bb4a6714ecef47132ceef1edb9f113cf69fe2199477f2df8aacb2ef1f482aa2"
+      "sha256": "f20961f0fcb07990a95dbe636d76189b2c382cd45cdc15a9ff40d77f117faf55"
     },
     {
       "file": "post-6.jpg",
-      "sha256": "52da4a2e6d71127406c9329487e6e4ebc02aa640a4ab1026af22ce7085a6badc"
+      "sha256": "801c9493a1da3e21fa216790fab6232efa7c8ff1862ee96225c001fef9289e06"
     }
   ],
-  "caratteri": 728,
+  "caratteri": 755,
   "hashtag": 6,
   "avvisi": [
     "pagina 1: grafica: la scritta «dopo le prime 5 giornate. (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
@@ -55,11 +55,11 @@
     "numeri della didascalia rintracciabili nelle fonti",
     "scheda delle fonti più recente dell'ultima giornata"
   ],
-  "impronta_approvata": "0d8392536d4ecf9b",
+  "impronta_approvata": "b3c7191cd2a04c4e",
   "approvata_il": null,
-  "sha256_jpeg": "bd3c5e00924a5cd579ab396d763dfd29f97213ec9613a90f81734cf42c647614",
-  "peso_jpeg_byte": 378588,
+  "sha256_jpeg": "b1de313d891a396cbd1cd952140be7a91419daf28a0fb4d01e289bb85dd99481",
+  "peso_jpeg_byte": 356658,
   "esce_il": "2026-10-12T12:30+02:00",
   "esce_il_utc": "2026-10-12T10:30+00:00",
-  "preparato_il": "2026-10-07T12:02:15"
+  "preparato_il": "2026-10-12T03:46:38"
 }
