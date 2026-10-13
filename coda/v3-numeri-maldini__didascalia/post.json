@@ -1,0 +1,29 @@
+{
+  "id": "v3-numeri-maldini/didascalia.md",
+  "titolo": "Maldini in numeri, dopo la 6ª giornata",
+  "didascalia": "Maldini segna da quattro partite di fila e il Cagliari è quarto 👀\n\nContano solo le prime sei giornate di campionato.\n\nLe prime due le ha giocate senza segnare, poi non si è più fermato: Lecce, Atalanta, Udinese e domenica la Juventus, il giorno del suo venticinquesimo compleanno. Il Cagliari in tutto ha fatto sei gol, quattro sono suoi. E tre delle quattro vittorie le ha decise lui: l'1-0 al Lecce, il rigore del 2-1 a Bergamo, l'1-0 a Udine. Senza quei tre gol il Cagliari avrebbe sette punti invece di tredici.\n\nMaldini arriva a dieci gol prima del ritorno? ⬇️\n\n#SerieA #calcio #Cagliari #Maldini #Giornata6 #pallalungaepedalare",
+  "caratteri": 633,
+  "hashtag": 6,
+  "avvisi": [
+    "grafica: la scritta «Lecce, Atalanta,\nUdinese, Juventus (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "grafica: la scritta «Due terzi\nli ha fatti lui (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "grafica: la scritta «Tre vittorie decise\nda un suo gol (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "59305948e1dc0fb1",
+  "approvata_il": null,
+  "sha256_jpeg": "728c47a9556d10f813e1591de1cdb0a54a2d5c49b3ddcae371fa44cc1f17a470",
+  "peso_jpeg_byte": 513928,
+  "esce_il": "2026-10-15T18:30+02:00",
+  "esce_il_utc": "2026-10-15T16:30+00:00",
+  "preparato_il": "2026-10-13T12:46:52"
+}
