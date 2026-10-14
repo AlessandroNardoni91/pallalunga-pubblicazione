@@ -1,0 +1,63 @@
+{
+  "id": "v3-20-squadre-16-frosinone/didascalia.md",
+  "titolo": "Le 20 squadre, 16ª: il Frosinone",
+  "didascalia": "Quinta puntata, tocca al Frosinone 👀 Per noi è la sedicesima rosa della Serie A, ma la classifica vera dice nono, con dieci punti dopo sei giornate.\n\nLa posizione nella serie la dà la forza della rosa. Il resto sono i numeri delle prime sei giornate.\n\nL'anno scorso in Serie B è arrivato secondo con ottantuno punti e tre sconfitte in trentotto partite, dietro al solo Venezia. In estate ha speso 30,60 milioni e ne ha incassato uno: dieci e settanta per Bobcek dal Lechia Gdansk, otto e mezzo per Schmid dal Werder Brema. Bobcek però finora ha giocato quarantasei minuti, e a tenere in piedi la squadra sono quelli della promozione: Kvernadze con tre gol, Calò che il Frosinone ha preso dal Cesena per trecentomila euro e che non esce mai dal campo. Alvini ha schierato il 4-2-3-1 in tutte e sei le partite, senza mai cambiare. Venerdì alle 20:45 arriva il Sassuolo allo Stirpe.\n\nIl Frosinone chiude davanti o dietro al Sassuolo a maggio? ⬇️\n\n#SerieA #calcio #Frosinone #LeVentiSquadre #Alvini #pallalungaepedalare",
+  "pagine": [
+    {
+      "file": "post.jpg",
+      "sha256": "9a360dafa4809223299d0baf95426e51434b0fff70049e57bdce790cffe5d091"
+    },
+    {
+      "file": "post-2.jpg",
+      "sha256": "6eee904b53924612c38d81f03442b94128b04226caee3c71e9351198fd1c6619"
+    },
+    {
+      "file": "post-3.jpg",
+      "sha256": "e955186f2fea658c1203f5bf506f28c55034a1c7b1822cf61572308135599f7a"
+    },
+    {
+      "file": "post-4.jpg",
+      "sha256": "07019604df6a6e1b2db681da1777de5b4f7e28414474c584e543906a32991e06"
+    },
+    {
+      "file": "post-5.jpg",
+      "sha256": "2668d6b853fb6a428d94089fc9e552ecac6cd74cc12ccb10f91067dc67f75145"
+    },
+    {
+      "file": "post-6.jpg",
+      "sha256": "4bc382a815925da0f2a3cce560db325011e42ad18e8d61e8e5e4993d6999717f"
+    }
+  ],
+  "caratteri": 1015,
+  "hashtag": 6,
+  "avvisi": [
+    "pagina 1: grafica: la scritta «L'anno scorso 2º in Serie B con 81 punti (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 1: grafica: la scritta «dopo 6 giornate. (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 2: grafica: la scritta «dal Lechia Gdansk, 10,70 milioni (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 2: grafica: la scritta «dal Werder Brema, 8,50 milioni (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 2: grafica: la scritta «dal Werder Brema per 8,50 milioni (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 3: foto di lorenzo-palmisani: origine «agenzia», non è un ritratto ufficiale (club o UEFA): controlla a occhio maglia e stagione",
+    "pagina 4: grafica: la scritta «. Dei nove gol del Frosinone ne ha fatti (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 4: grafica: la scritta «. Il Frosinone lo ha preso dal Cesena pe (3 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 4: grafica: la scritta «, il più caro di questa estate. Finora h (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 5: grafica: la scritta «Salvezza senza patemi (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 5: grafica: la scritta «Oggi sono 10 dopo 6 giornate (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "a6f2e0278dde1f73",
+  "approvata_il": null,
+  "sha256_jpeg": "9a360dafa4809223299d0baf95426e51434b0fff70049e57bdce790cffe5d091",
+  "peso_jpeg_byte": 496374,
+  "esce_il": "2026-10-16T12:30+02:00",
+  "esce_il_utc": "2026-10-16T10:30+00:00",
+  "preparato_il": "2026-10-14T03:54:14"
+}
