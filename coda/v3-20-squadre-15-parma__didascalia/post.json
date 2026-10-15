@@ -1,0 +1,61 @@
+{
+  "id": "v3-20-squadre-15-parma/didascalia.md",
+  "titolo": "Le 20 squadre, 15ª: il Parma",
+  "didascalia": "Sesta puntata, tocca al Parma 👀 Nella nostra classifica della forza delle rose è quindicesimo, ma la classifica vera dice diciottesimo, con quattro punti.\n\nLa posizione nella serie la dà la forza della rosa. Il resto sono i numeri delle prime sei giornate.\n\nL'anno scorso era finito tredicesimo con quarantacinque punti. Poi in estate ha incassato 77,20 milioni e ne ha spesi 30: Suzuki all'Aston Villa per 30 milioni, Pellegrino alla Fiorentina per 22,50, Circati al Benfica per 18. Davanti è rimasto poco: quattro gol in sei partite sono il peggior attacco della Serie A. Due li ha fatti Romero, l'acquisto più caro, fermo a centonovantacinque minuti. Un altro è di Lontani, diciotto anni, preso gratis dal Milan Primavera e titolare quattro volte su sei. In porta, dopo Suzuki, Corvi non ha saltato un minuto. A fine settembre è cambiata la panchina: via Cuesta, dentro Gilardino, che a San Siro ha tenuto il 3-4-2-1. Lunedì alle 20:45 al Tardini arriva il Torino.\n\nDa qui a Natale chi fa più gol, Romero o Lontani? ⬇️\n\n#SerieA #calcio #Parma #LeVentiSquadre #Gilardino #pallalungaepedalare",
+  "pagine": [
+    {
+      "file": "post.jpg",
+      "sha256": "76da920fe4fdac4094cb8c53168f470a04a6adb1fe23b8de5d1ca3faeea1cf76"
+    },
+    {
+      "file": "post-2.jpg",
+      "sha256": "b67617fe5cc66f08ebf56d85c3223fec7b42b0e277cfe900ee16ea3d59272771"
+    },
+    {
+      "file": "post-3.jpg",
+      "sha256": "ec745aecd13e77577fcd5e44db3baff61b470309f4dd5f67e139eed91ae47d3f"
+    },
+    {
+      "file": "post-4.jpg",
+      "sha256": "b0500d3eccff4e88d5b0e943b4d0006bfd2f3e637a61b1e67525fba43ba7db5d"
+    },
+    {
+      "file": "post-5.jpg",
+      "sha256": "8233a172217d5a736d508a758a5f34d5faae0f1d426c758dbc8c29239c9837c9"
+    },
+    {
+      "file": "post-6.jpg",
+      "sha256": "0e9e57d9d17f56ba7b06f9b76ba7f9cbd514c910f4bcf0fb19784a900adaaf9f"
+    }
+  ],
+  "caratteri": 1093,
+  "hashtag": 6,
+  "avvisi": [
+    "pagina 2: grafica: la scritta «dalla Juventus Next Gen, 6 milioni (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 4: grafica: la scritta «, la cessione più ricca dell'estate. Cor (3 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 4: grafica: la scritta «dal Milan Primavera, è partito dall'iniz (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 4: grafica: la scritta «sui quattro della squadra, ma titolare s (3 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 5: grafica: la scritta «Salvezza all'ultima curva (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 5: grafica: la scritta «Oggi sono 4 dopo 6 giornate (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 5: grafica: la scritta «Se l'attacco resta l'ultimo (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 5: grafica: la scritta «Se Gilardino trova il centravanti (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 5: grafica: la scritta «525 minuti in mezzo al campo (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "d7e5e9a77560e5b5",
+  "approvata_il": null,
+  "sha256_jpeg": "76da920fe4fdac4094cb8c53168f470a04a6adb1fe23b8de5d1ca3faeea1cf76",
+  "peso_jpeg_byte": 406861,
+  "esce_il": "2026-10-17T12:30+02:00",
+  "esce_il_utc": "2026-10-17T10:30+00:00",
+  "preparato_il": "2026-10-15T03:58:43"
+}
