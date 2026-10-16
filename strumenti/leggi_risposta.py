@@ -12,14 +12,20 @@ In tutti gli altri casi il programma non fa e non scrive niente.
 Il testo della risposta non viene mai eseguito né passato a un comando: si legge dal file dell'evento
 che GitHub prepara, e si confronta con tre parole.
 
+Con «scarta» il post viene anche tolto dalla cartella coda/ (dal 16/10/2026). Prima restava lì: al primo
+caricamento successivo apri_scheda.py gli riapriva una scheda nuova (la riserva under 23 scartata il 16/10
+è tornata come scheda 52) e coda_redazione.py contava come pieno il giorno di un post che non esce.
+
 Solo libreria standard.
 """
 import json
 import os
 import re
+import subprocess
 import sys
 import urllib.error
 import urllib.request
+from pathlib import Path
 
 AUTOMATISMO = "github-actions[bot]"
 DECISIONI = {"approva": "approvato", "rifare": "da-rifare", "scarta": "scartato"}
@@ -89,6 +95,27 @@ def github(metodo: str, percorso: str, dati: dict | None = None):
         raise SystemExit(f"GitHub ha risposto {errore.code} a {metodo} {percorso}")
 
 
+def git(*argomenti: str) -> None:
+    subprocess.run(["git", *argomenti], check=True)
+
+
+def togli_dalla_coda(nome: str) -> str:
+    """Toglie coda/<nome> dall'archivio con un commit. Restituisce "" se è andata, altrimenti il motivo."""
+    if not re.fullmatch(r"[\w.-]+", nome) or not Path("coda", nome).is_dir():
+        return f"non trovo la cartella coda/{nome}"
+    try:
+        git("rm", "-r", "-q", f"coda/{nome}")
+        git("-c", "user.name=pallalungaepedalare", "-c", "user.email=41898282+github-actions[bot]@users.noreply.github.com",
+            "commit", "-q", "-m", f"Scartato: {nome}")
+        for tentativo in range(3):  # un altro automatismo può aver caricato nel frattempo
+            git("pull", "-q", "--rebase", "origin", "main")
+            if subprocess.run(["git", "push", "-q", "origin", "HEAD:main"]).returncode == 0:
+                return ""
+        return "il caricamento è stato rifiutato tre volte"
+    except subprocess.CalledProcessError as errore:
+        return f"git si è fermato ({errore})"
+
+
 def main() -> int:
     evento = json.load(open(os.environ["GITHUB_EVENT_PATH"], encoding="utf-8"))
     esito = decidi(evento, os.environ["GITHUB_REPOSITORY_OWNER"])
@@ -117,6 +144,12 @@ def main() -> int:
     github("POST", f"/issues/{numero}/comments", {"body": testo})
     if esito["decisione"] == "scarta":
         github("PATCH", f"/issues/{numero}", {"state": "closed", "state_reason": "not_planned"})
+        pacchetto = re.search(r"<!-- pacchetto:(\S+) ", evento["issue"].get("body") or "")
+        problema = togli_dalla_coda(pacchetto.group(1)) if pacchetto else "la scheda non dice quale pacchetto è"
+        if problema:
+            github("POST", f"/issues/{numero}/comments", {"body": f"Attenzione: il post è scartato e non uscirà, ma non sono riuscito a toglierlo dalla coda ({problema}). "
+                                                                  "Va tolto a mano, se no al prossimo caricamento torna una scheda nuova."})
+        print("Tolto dalla coda:", "no, " + problema if problema else "sì")
     print("Registrato:", esito["decisione"])
     return 0
 

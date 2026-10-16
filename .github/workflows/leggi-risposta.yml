@@ -5,7 +5,7 @@ on:
     types: [created]
 
 permissions:
-  contents: read
+  contents: write  # dal 16/10/2026: con «scarta» il post si toglie anche dalla cartella coda/
   issues: write
 
 jobs:
