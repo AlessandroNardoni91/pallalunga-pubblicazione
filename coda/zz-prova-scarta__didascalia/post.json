@@ -1,0 +1,21 @@
+{
+  "id": "zz-prova-scarta/didascalia.md",
+  "titolo": "Prova dello scarta (post finto: rispondi scarta)",
+  "didascalia": "Collaudo dello scarta, qui dentro non c'è niente di vero 👀 Quello che si misura è una cosa sola: quando la risposta all'email è scarta, il post deve sparire anche dalla coda dell'archivio, e non tornare più come scheda nuova al caricamento successivo.\n\nLa lunghezza non è casuale. Il controllo automatico rimanda indietro qualunque didascalia più corta di cinquecento caratteri, quindi anche una prova deve avere il peso di un testo buono, e questo secondo capoverso serve soltanto a riempire lo spazio.\n\nA questa email si risponde con una parola sola, scarta.\n\nSe queste righe arrivano davvero sul profilo, il collaudo è andato storto ⬇️\n\n#SerieA #calcio #collaudo #prova #redazione #pallalungaepedalare",
+  "caratteri": 704,
+  "hashtag": 6,
+  "avvisi": [
+    "la grafica zz-prova-scarta/post.png non è nell'elenco di generatore/ridisegna_tutto.py: i controlli su grafica, numeri in mostra e foto sono saltati"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "numeri della didascalia rintracciabili nelle fonti"
+  ],
+  "impronta_approvata": "2a461ef5ed44cdad",
+  "approvata_il": null,
+  "sha256_jpeg": "dc4e169f722590cd5185c1714afaa181e20ead6d62decfe1fb88c54ae64a415f",
+  "peso_jpeg_byte": 73484,
+  "esce_il": "2026-12-31T18:30+01:00",
+  "esce_il_utc": "2026-12-31T17:30+00:00",
+  "preparato_il": "2026-10-16T11:12:51"
+}
