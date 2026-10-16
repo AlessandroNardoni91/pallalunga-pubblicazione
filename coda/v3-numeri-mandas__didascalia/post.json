@@ -1,0 +1,29 @@
+{
+  "id": "v3-numeri-mandas/didascalia.md",
+  "titolo": "Mandas in numeri, dopo la 6ª giornata",
+  "didascalia": "La Lazio è seconda e stasera va a Torino dalla Juventus. In porta c'è sempre lui 👀\n\nChristos Mandas non è uscito dal campo nemmeno per un minuto: sei partite, sei volte titolare, cinquecentoquaranta minuti su cinquecentoquaranta. Dietro di lui sono passati quattro gol in tutto, e in Serie A hanno fatto meglio solo Roma e Cagliari, ferme a tre. Tre volte su sei ha chiuso la porta: a Bologna, in casa col Genoa e a Venezia. La Lazio ci ha costruito sedici punti, cinque vittorie e un pareggio, ed è una delle quattro squadre che non hanno ancora perso, insieme a Inter, Roma e Milan.\n\nAlle 20:45 arriva la prova più dura: la Juventus è sesta con undici punti e in sei giornate ne ha segnati nove.\n\nQuanti gol gli fa la Juventus stasera? ⬇️\n\n#SerieA #calcio #Lazio #Mandas #JuventusLazio #pallalungaepedalare",
+  "caratteri": 808,
+  "hashtag": 6,
+  "avvisi": [
+    "grafica: la scritta «Non ha saltato\nun minuto (4 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "grafica: la scritta «Solo Roma e Cagliari\nhanno fatto meglio (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "grafica: la scritta «Una delle quattro\nancora imbattute (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "6f3b9f3da12e909d",
+  "approvata_il": null,
+  "sha256_jpeg": "03a378b02e14e27cc0beef5e7479ef91c4c262a17abdde3e35e9cd404b405909",
+  "peso_jpeg_byte": 456536,
+  "esce_il": "2026-10-18T18:30+02:00",
+  "esce_il_utc": "2026-10-18T16:30+00:00",
+  "preparato_il": "2026-10-16T04:03:06"
+}
