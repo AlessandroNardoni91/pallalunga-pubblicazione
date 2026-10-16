@@ -1,0 +1,27 @@
+{
+  "id": "v3-riserva-acquisti-cari/didascalia.md",
+  "titolo": "Riserva: gli acquisti più cari fra chi gioca ancora in Serie A",
+  "didascalia": "Gonçalo Ramos è costato al Milan 74 milioni: fra chi gioca oggi in Serie A, nessuno è stato pagato di più 👀\n\nIl numero è il prezzo che una squadra di Serie A ha speso per prenderlo, in milioni, secondo i record di trasferimento di Transfermarkt. Dentro ci sono solo i giocatori che sono ancora nel nostro campionato.\n\nLa Juventus ne ha quattro: Koopmeiners, Douglas Luiz, Bremer e Kolo Muani. Il Milan due, Gonçalo Ramos e Moreira, arrivati tutti e due quest'estate. Højlund il Napoli lo ha pagato 44 milioni, poco più della metà dei 79,8 che il Manchester United aveva dato all'Atalanta tre anni fa. Dovbyk resta fuori per 100 mila euro.\n\nFra questi otto, chi ha già ripagato il prezzo? ⬇️\n\n#SerieA #calcio #calciomercato #Juventus #Milan #GoncaloRamos #pallalungaepedalare",
+  "caratteri": 774,
+  "hashtag": 7,
+  "avvisi": [
+    "foto di goncalo-ramos: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del milan 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "caeba54b0fdde21d",
+  "approvata_il": null,
+  "sha256_jpeg": "0266583b09d137db400d9f8cfd6b9023eed9d7bf80533c3d19aad16f9a15bca4",
+  "peso_jpeg_byte": 630839,
+  "esce_il": "2026-12-31T18:30+01:00",
+  "esce_il_utc": "2026-12-31T17:30+00:00",
+  "preparato_il": "2026-10-16T12:00:05"
+}
