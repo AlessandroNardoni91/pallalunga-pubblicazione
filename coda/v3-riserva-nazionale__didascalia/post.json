@@ -1,0 +1,31 @@
+{
+  "id": "v3-riserva-nazionale/didascalia.md",
+  "titolo": "Riserva: i più convocati in Nazionale fra chi gioca in Serie A",
+  "didascalia": "Modrić ha giocato 206 partite con la Croazia, più di chiunque altro in Serie A 👀\n\nIl numero è quello delle presenze con la Nazionale maggiore, contate da Transfermarkt fra i giocatori che oggi stanno in una rosa del nostro campionato. Valgono anche quelle di chi in Nazionale ha già smesso.\n\nDietro Modrić c'è un vuoto di 58 partite: Ricardo Rodríguez del Torino è a 148 con la Svizzera. Poi vengono De Bruyne con il Belgio, Alaba con l'Austria, Zieliński, Çalhanoğlu e Kessié, tutti sopra quota cento. L'Inter ne ha tre negli otto, e il terzo è Mkhitaryan, che con l'Armenia ha chiuso a 95. Il primo italiano è Barella, che resta fuori con 73.\n\nFra questi otto, chi è stato il più importante per la sua Nazionale? ⬇️\n\n#SerieA #calcio #Nazionale #Modric #DeBruyne #Inter #pallalungaepedalare",
+  "caratteri": 791,
+  "hashtag": 7,
+  "avvisi": [
+    "foto di hakan-calhanoglu: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del inter 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)",
+    "foto di henrikh-mkhitaryan: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del inter 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)",
+    "foto di luka-modric: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del milan 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)",
+    "foto di piotr-zielinski: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del inter 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)",
+    "grafica: la scritta «Atalanta · Costa d'Avorio (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "a51827854f1f1913",
+  "approvata_il": null,
+  "sha256_jpeg": "c25fb6a09277bb549958449e8c0a397a4883ce2c8d9e06c2953f6e7e6ffee4e7",
+  "peso_jpeg_byte": 649235,
+  "esce_il": "2026-12-29T18:30+01:00",
+  "esce_il_utc": "2026-12-29T17:30+00:00",
+  "preparato_il": "2026-10-16T11:59:52"
+}
