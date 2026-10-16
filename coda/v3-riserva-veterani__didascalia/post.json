@@ -1,0 +1,27 @@
+{
+  "id": "v3-riserva-veterani/didascalia.md",
+  "titolo": "Riserva: i veterani della Serie A",
+  "didascalia": "De Silvestri ha 38 anni e 463 partite di Serie A: nessuno di quelli che giocano oggi ne ha di più 👀\n\nIl numero è quello delle presenze in Serie A in carriera, contate da Transfermarkt dopo la sesta giornata, fra i giocatori ancora in attività nel nostro campionato.\n\nDietro De Silvestri c'è Zieliński con 428, poi Dybala, Politano e Zapata, tutti sopra le 350. Berardi e Cristante sono appaiati a 345, ma Berardi le ha giocate tutte con la maglia del Sassuolo, unico degli otto con una squadra sola. Barella è nono con 344: gli basta una partita per raggiungere gli ultimi due.\n\nFra questi otto, chi riuscirà a superare De Silvestri prima di smettere? ⬇️\n\n#SerieA #calcio #DeSilvestri #Zielinski #Berardi #Dybala #pallalungaepedalare",
+  "caratteri": 733,
+  "hashtag": 7,
+  "avvisi": [
+    "foto di piotr-zielinski: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del inter 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "9834d6d247535d3d",
+  "approvata_il": null,
+  "sha256_jpeg": "f04048a34be56fd4c2166e4497fb9b529f04ac42aec5cd60502165e74da25a1b",
+  "peso_jpeg_byte": 629148,
+  "esce_il": "2026-12-30T18:30+01:00",
+  "esce_il_utc": "2026-12-30T17:30+00:00",
+  "preparato_il": "2026-10-16T11:59:58"
+}
