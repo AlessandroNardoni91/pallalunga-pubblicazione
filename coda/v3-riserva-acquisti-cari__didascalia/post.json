@@ -17,11 +17,11 @@
     "numeri della didascalia rintracciabili nelle fonti",
     "scheda delle fonti più recente dell'ultima giornata"
   ],
-  "impronta_approvata": "caeba54b0fdde21d",
+  "impronta_approvata": "4f477aaa9f63405b",
   "approvata_il": null,
-  "sha256_jpeg": "0266583b09d137db400d9f8cfd6b9023eed9d7bf80533c3d19aad16f9a15bca4",
-  "peso_jpeg_byte": 630839,
-  "esce_il": "2026-12-31T18:30+01:00",
-  "esce_il_utc": "2026-12-31T17:30+00:00",
-  "preparato_il": "2026-10-16T12:00:05"
+  "sha256_jpeg": "41256afd8c5df9ef41057eab49228f8c043aad42122d4bad242aeb9d259150ba",
+  "peso_jpeg_byte": 578878,
+  "esce_il": "2026-10-18T18:30+02:00",
+  "esce_il_utc": "2026-10-18T16:30+00:00",
+  "preparato_il": "2026-10-17T03:59:12"
 }
