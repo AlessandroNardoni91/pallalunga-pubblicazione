@@ -8,8 +8,8 @@
     "foto di hakan-calhanoglu: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del inter 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)",
     "foto di henrikh-mkhitaryan: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del inter 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)",
     "foto di luka-modric: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del milan 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)",
-    "foto di piotr-zielinski: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del inter 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)",
-    "grafica: la scritta «Atalanta · Costa d'Avorio (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto"
+    "grafica: la scritta «Atalanta · Costa d'Avorio (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "la scheda delle fonti è del 16/10, ma la giornata 7 è finita il 19/10: i numeri della stagione in corso potrebbero essere vecchi"
   ],
   "controlli_fatti": [
     "regole di scrittura della didascalia",
@@ -21,11 +21,12 @@
     "numeri della didascalia rintracciabili nelle fonti",
     "scheda delle fonti più recente dell'ultima giornata"
   ],
-  "impronta_approvata": "a51827854f1f1913",
+  "impronta_approvata": "f5bbcea4a938f1b7",
   "approvata_il": null,
-  "sha256_jpeg": "c25fb6a09277bb549958449e8c0a397a4883ce2c8d9e06c2953f6e7e6ffee4e7",
-  "peso_jpeg_byte": 649235,
-  "esce_il": "2026-12-29T18:30+01:00",
-  "esce_il_utc": "2026-12-29T17:30+00:00",
-  "preparato_il": "2026-10-16T11:59:52"
+  "sha256_jpeg": "7c6dc7ca257a6d268816694ce6343f7121776330d356b088566a0c28a3bca6ea",
+  "peso_jpeg_byte": 657262,
+  "esce_il": null,
+  "esce_il_utc": null,
+  "riserva_fino": "2026-11-08",
+  "preparato_il": "2026-10-20T10:28:22"
 }
