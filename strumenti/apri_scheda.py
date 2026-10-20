@@ -22,7 +22,7 @@ PROPRIETARIA = os.environ["GITHUB_REPOSITORY_OWNER"]
 VERSIONE = os.environ["GITHUB_SHA"]
 API = f"https://api.github.com/repos/{ARCHIVIO}"
 ETICHETTE = {"coda": "5C6A62", "approvato": "1E8A4C", "da-rifare": "B98900", "scartato": "C8352B",
-             "in-pubblicazione": "E07B00", "pubblicato": "1B4F9C", "errore": "7f1d1d"}
+             "in-pubblicazione": "E07B00", "pubblicato": "1B4F9C", "errore": "7f1d1d", "saltato": "8A6A12"}
 
 
 def github(metodo: str, percorso: str, dati: dict | None = None):
@@ -54,6 +54,10 @@ def testo_scheda(nome: str, d: dict) -> str:
         quando = datetime.fromisoformat(d["esce_il"])
         giorno = ["lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato", "domenica"][quando.weekday()]
         uscita = f"{giorno} {quando:%d/%m/%Y} alle {quando:%H:%M} (ora italiana)"
+    elif d.get("riserva_fino"):  # dal 20/10/2026: la riserva non ha data, la usa da sola pubblica_programmati.py
+        fino = datetime.fromisoformat(d["riserva_fino"])
+        uscita = (f"**RISERVA, senza data.** Se la approvi, esce da sola alle 12:30 o alle 18:30 di un giorno in cui a "
+                  f"quell'ora non c'è un post approvato, fino al {fino:%d/%m/%Y}. Dopo quel giorno non viene più usata.")
     controlli = ""
     if d.get("controlli_fatti"):
         controlli = "\n**Controlli automatici superati:** " + "; ".join(d["controlli_fatti"]) + ".\n"
@@ -104,7 +108,7 @@ def main() -> None:
         elif segno not in (scheda.get("body") or ""):
             numero = scheda["number"]
             github("PATCH", f"/issues/{numero}", {"body": corpo})
-            for etichetta in ("approvato", "da-rifare", "scartato", "promemoria", "scaduto"):
+            for etichetta in ("approvato", "da-rifare", "scartato", "promemoria", "scaduto", "saltato"):
                 if any(e["name"] == etichetta for e in scheda.get("labels", [])):
                     github("DELETE", f"/issues/{numero}/labels/{etichetta}")
             # L'email nasce dal commento: ci va la versione nuova intera (grafica, didascalia, uscita),

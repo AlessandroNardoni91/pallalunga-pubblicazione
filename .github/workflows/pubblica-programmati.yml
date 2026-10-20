@@ -11,6 +11,10 @@ on:
         description: "Prova generale: fa tutto tranne pubblicare"
         type: boolean
         default: true
+      orario_prova:
+        description: "Solo in prova: l'orario fisso da provare per le riserve, ora italiana (per esempio 10:15)"
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -35,4 +39,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           PROVA: ${{ (github.event_name == 'workflow_dispatch' && inputs.prova) && '1' || '0' }}
+          ORARIO_PROVA: ${{ github.event_name == 'workflow_dispatch' && inputs.orario_prova || '' }}
         run: python3 -B strumenti/pubblica_programmati.py
