@@ -1,0 +1,28 @@
+{
+  "id": "v3-top20-difensori/didascalia-parte-4.md",
+  "titolo": "Top 20 difensori centrali, parte 4 (dal 5° al 1°)",
+  "didascalia": "Ultima puntata dei 20 difensori centrali più forti della Serie A 👀 Tre dei primi cinque giocano nell'Inter.\n\nCome l'abbiamo fatta: quotazioni del Fantacalcio, valore più alto toccato sul mercato e pagelle dei giornali delle ultime due stagioni. Contano meno, ma contano, le partite da titolare e il valore di oggi. Il numero accanto al nome sono le partite da titolare in A nel 2025/26.\n\nBastoni è primo perché nessuno di questi venti è mai valso quanto lui: 80 milioni nel dicembre 2025, 65 adesso, e anche oggi è il più caro. Bremer l'anno scorso ne ha giocate 25 su 27 da disponibile, e quest'anno è l'unico dei cinque sempre titolare: 7 su 7 con 2 gol. Akanji ha la media voto più alta della classifica, 6,41. Mancini ne ha 36 su 36: nessuno dei venti ne ha di più. Bisseck è l'ultimo dei cinque per partite, 21, ma è il solo che oggi vale quanto il suo massimo di sempre, 50 milioni.\n\nSerie finita: chi avreste messo primo al posto di Bastoni? ⬇️\n\n#SerieA #calcio #difensori #Top20 #Inter #Juventus #Roma #pallalungaepedalare",
+  "caratteri": 1030,
+  "hashtag": 8,
+  "avvisi": [
+    "foto di alessandro-bastoni: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del inter 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)",
+    "foto alessandro-bastoni-sagoma.png ingrandita 1.7 volte: può risultare sgranata"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "99ebe1d9a4a3ed1d",
+  "approvata_il": null,
+  "sha256_jpeg": "7a6c9f8cb6ed16028db0b58dab6ca560939a970f92d3326242ed335983dbf448",
+  "peso_jpeg_byte": 500483,
+  "esce_il": "2026-10-26T18:30+01:00",
+  "esce_il_utc": "2026-10-26T17:30+00:00",
+  "preparato_il": "2026-10-25T04:53:16"
+}
