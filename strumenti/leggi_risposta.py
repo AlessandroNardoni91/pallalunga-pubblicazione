@@ -23,6 +23,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -85,14 +86,20 @@ def github(metodo: str, percorso: str, dati: dict | None = None):
                                        data=json.dumps(dati).encode("utf-8") if dati is not None else None,
                                        headers={"Authorization": "Bearer " + os.environ["GITHUB_TOKEN"], "Accept": "application/vnd.github+json",
                                                 "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "pallalunga"})
-    try:
-        with urllib.request.urlopen(richiesta, timeout=30) as risposta:
-            corpo = risposta.read()
-            return json.loads(corpo) if corpo else None
-    except urllib.error.HTTPError as errore:
-        if errore.code == 404 and metodo == "DELETE":  # l'etichetta non c'era
-            return None
-        raise SystemExit(f"GitHub ha risposto {errore.code} a {metodo} {percorso}")
+    # 25/10/2026: un errore del server di GitHub (500 e simili, un suo guasto di un momento) si ritenta due volte
+    for tentativo in range(3):
+        try:
+            with urllib.request.urlopen(richiesta, timeout=30) as risposta:
+                corpo = risposta.read()
+                return json.loads(corpo) if corpo else None
+        except urllib.error.HTTPError as errore:
+            if errore.code == 404 and metodo == "DELETE":  # l'etichetta non c'era
+                return None
+            if errore.code >= 500 and tentativo < 2:
+                print(f"GitHub ha risposto {errore.code} a {metodo} {percorso}: riprovo fra {15 * (tentativo + 1)} secondi")
+                time.sleep(15 * (tentativo + 1))
+                continue
+            raise SystemExit(f"GitHub ha risposto {errore.code} a {metodo} {percorso}")
 
 
 def git(*argomenti: str) -> None:

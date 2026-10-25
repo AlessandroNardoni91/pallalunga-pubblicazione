@@ -12,6 +12,7 @@ per questo archivio e solo per la durata del giro.
 import json
 import os
 import re
+import time
 import urllib.error
 import urllib.request
 from datetime import datetime
@@ -29,14 +30,21 @@ def github(metodo: str, percorso: str, dati: dict | None = None):
     richiesta = urllib.request.Request(API + percorso, method=metodo, data=json.dumps(dati).encode("utf-8") if dati is not None else None,
                                        headers={"Authorization": "Bearer " + os.environ["GITHUB_TOKEN"], "Accept": "application/vnd.github+json",
                                                 "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "pallalunga"})
-    try:
-        with urllib.request.urlopen(richiesta, timeout=30) as risposta:
-            corpo = risposta.read()
-            return json.loads(corpo) if corpo else None
-    except urllib.error.HTTPError as errore:
-        if errore.code == 422 and percorso == "/labels":  # l'etichetta esiste già
-            return None
-        raise SystemExit(f"GitHub ha risposto {errore.code} a {metodo} {percorso}: {errore.read().decode('utf-8', 'replace')[:400]}")
+    # 25/10/2026: un errore del server di GitHub (500 e simili) si ritenta due volte, tranne l'apertura di una
+    # scheda nuova: GitHub a volte la crea lo stesso e ritentare la raddoppierebbe
+    for tentativo in range(3):
+        try:
+            with urllib.request.urlopen(richiesta, timeout=30) as risposta:
+                corpo = risposta.read()
+                return json.loads(corpo) if corpo else None
+        except urllib.error.HTTPError as errore:
+            if errore.code == 422 and percorso == "/labels":  # l'etichetta esiste già
+                return None
+            if errore.code >= 500 and tentativo < 2 and not (metodo == "POST" and percorso == "/issues"):
+                print(f"GitHub ha risposto {errore.code} a {metodo} {percorso}: riprovo fra {15 * (tentativo + 1)} secondi")
+                time.sleep(15 * (tentativo + 1))
+                continue
+            raise SystemExit(f"GitHub ha risposto {errore.code} a {metodo} {percorso}: {errore.read().decode('utf-8', 'replace')[:400]}")
 
 
 def testo_scheda(nome: str, d: dict) -> str:

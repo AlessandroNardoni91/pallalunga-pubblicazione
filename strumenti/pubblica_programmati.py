@@ -92,14 +92,22 @@ def github(metodo: str, percorso: str, dati: dict | None = None):
                                        data=json.dumps(dati).encode("utf-8") if dati is not None else None,
                                        headers={"Authorization": "Bearer " + os.environ["GITHUB_TOKEN"], "Accept": "application/vnd.github+json",
                                                 "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "pallalunga"})
-    try:
-        with urllib.request.urlopen(richiesta, timeout=30) as risposta:
-            corpo = risposta.read()
-            return json.loads(corpo) if corpo else None
-    except urllib.error.HTTPError as errore:
-        if errore.code in (404, 422) and (metodo == "DELETE" or percorso == "/labels"):
-            return None
-        raise SystemExit(f"GitHub ha risposto {errore.code} a {metodo} {percorso}")
+    # 25/10/2026: il 23/10 GitHub ha risposto 500 (un suo guasto di un momento) al commento «pubblicato» e il
+    # giro si è fermato con il post già uscito ma la scheda ferma su «in-pubblicazione». Ora un errore del server
+    # di GitHub si ritenta due volte; non si ritenta solo l'apertura di una scheda nuova, che potrebbe raddoppiarla.
+    for tentativo in range(3):
+        try:
+            with urllib.request.urlopen(richiesta, timeout=30) as risposta:
+                corpo = risposta.read()
+                return json.loads(corpo) if corpo else None
+        except urllib.error.HTTPError as errore:
+            if errore.code in (404, 422) and (metodo == "DELETE" or percorso == "/labels"):
+                return None
+            if errore.code >= 500 and tentativo < 2 and not (metodo == "POST" and percorso == "/issues"):
+                print(f"   GitHub ha risposto {errore.code} a {metodo} {percorso}: riprovo fra {15 * (tentativo + 1)} secondi")
+                time.sleep(15 * (tentativo + 1))
+                continue
+            raise SystemExit(f"GitHub ha risposto {errore.code} a {metodo} {percorso}")
 
 
 def etichette(scheda: dict) -> set:
