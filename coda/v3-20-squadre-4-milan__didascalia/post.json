@@ -1,0 +1,67 @@
+{
+  "id": "v3-20-squadre-4-milan/didascalia.md",
+  "titolo": "Le 20 squadre, 4ª: il Milan",
+  "didascalia": "Quarta puntata: il Milan 👀 L'anno scorso è arrivato quinto con 70 punti, quest'anno dopo otto giornate ne ha 18 e non ha ancora perso.\n\nIn estate ha speso 164,15 milioni e ne ha incassati 87. Se n'è andato Rafael Leão, al Galatasaray per 38, e al suo posto sono arrivati Gonçalo Ramos dal PSG per 73,10 e Diego Moreira dallo Strasburgo per 50. Moreira in campo ci è stato poco, 307 minuti, ma ha già fatto 3 gol.\n\nAmorim ha scelto il 3-4-2-1 in sei partite su otto. Dietro sono 7 i gol presi in otto giornate, davanti domenica a Udine il migliore in campo è stato Pulisic: 2 gol e 1 assist in 357 minuti. In mezzo c'è Modrić, che a 41 anni è partito dall'inizio sei volte.\n\nNella nostra classifica della forza delle rose il Milan è 4º, dietro a Inter, Roma e Juventus. Più su non lo mettiamo perché davanti ha segnato 16 gol, meno di Inter e Roma.\n\nMercoledì 28 alle 18:30 ospita il Bologna, sabato a San Siro arriva l'Inter. ⬇️\n\nE voi, il Milan dove lo vedete a fine stagione?\n\n#LeVentiSquadre #SerieA #Milan #calcio #Modric #Pulisic #pallalungaepedalare",
+  "pagine": [
+    {
+      "file": "post.jpg",
+      "sha256": "28cc84fd613c1b61898d978ed331a5d1633b9028184ef78a734cc6d9c513042c"
+    },
+    {
+      "file": "post-2.jpg",
+      "sha256": "a5ea794469d0efaa4340dd6b9f5e274f7f5bf3cb434a3f48287ecfec1b0644a2"
+    },
+    {
+      "file": "post-3.jpg",
+      "sha256": "fbd83d6f7a758a9abdf58997fd0e18a310816186ecef89e201f9724d46ccb3d1"
+    },
+    {
+      "file": "post-4.jpg",
+      "sha256": "3844f8ef306766a2a9c249d30ea02417e4330c722fc554a5f0cc4b68bf1d58a1"
+    },
+    {
+      "file": "post-5.jpg",
+      "sha256": "58245174878b4e405f18b028e7a15dddf44c14b9be8e55b663c7b9c1c80d0a18"
+    },
+    {
+      "file": "post-6.jpg",
+      "sha256": "2c0b2598040a2297a628e433d755f355a594fa394c8b0b4a98332098cb7d8f2e"
+    }
+  ],
+  "caratteri": 1055,
+  "hashtag": 7,
+  "avvisi": [
+    "pagina 1: foto di luka-modric: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del milan 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)",
+    "pagina 1: grafica: la scritta «, ancora imbattuto. (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 2: grafica: la scritta «dal Nottingham, prestito 4,20 mln (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 2: grafica: la scritta «Rifare l'attacco senza Leão (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 2: grafica: la scritta «dallo Strasburgo per 50 milioni: 3 gol i (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 3: foto di christian-pulisic: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del club attuale 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)",
+    "pagina 3: foto di luka-modric: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del club attuale 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)",
+    "pagina 4: foto di christian-pulisic: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del club attuale 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)",
+    "pagina 4: grafica: la scritta «in 357 minuti: domenica ha segnato nello (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 4: grafica: la scritta «in difesa: il Milan ha preso 7 gol in ot (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 5: grafica: la scritta «Un posto sopra dove lo mettiamo noi (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 5: grafica: la scritta «Oggi sono 18 dopo 8 giornate (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 5: grafica: la scritta «Se davanti resta così: 16 gol in otto (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 5: grafica: la scritta «Se la difesa tiene: 7 gol presi, zero sc (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 5: grafica: la scritta «7 presenze, 5 da titolare e 340 minuti s (3 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "603eb0864d1ad236",
+  "approvata_il": null,
+  "sha256_jpeg": "28cc84fd613c1b61898d978ed331a5d1633b9028184ef78a734cc6d9c513042c",
+  "peso_jpeg_byte": 522427,
+  "esce_il": "2026-10-28T12:30+01:00",
+  "esce_il_utc": "2026-10-28T11:30+00:00",
+  "preparato_il": "2026-10-26T04:55:15"
+}
