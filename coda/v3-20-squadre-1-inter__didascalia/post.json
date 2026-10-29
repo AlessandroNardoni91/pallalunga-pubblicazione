@@ -1,0 +1,64 @@
+{
+  "id": "v3-20-squadre-1-inter/didascalia.md",
+  "titolo": "Le 20 squadre, 1ª: l'Inter",
+  "didascalia": "Ultima puntata: l'Inter 👀 L'anno scorso ha vinto il campionato con 87 punti, quest'anno dopo otto giornate ne ha 22, con 23 gol fatti e 10 subiti.\n\nIl mercato non ha smontato niente: 101 milioni spesi e 33,50 incassati, con Dumfries venduto al Real Madrid per 20. Sono partiti Sommer, de Vrij e Acerbi, cioè tre pezzi del gruppo che ha vinto, e sono arrivati Spence e Curtis Jones per trenta milioni ciascuno.\n\nChivu ha giocato con il 3-5-2 in tutte e otto le partite, e la novità più grossa è davanti: Pio Esposito, ventun anni, è partito titolare sette volte su otto, con 2 gol e 2 assist. Accanto a lui Thuram ne ha fatti cinque in 460 minuti.\n\nIn mezzo il lavoro lo fa Barella: 625 minuti, più di chiunque altro a parte il portiere.\n\nNella nostra classifica della forza delle rose l'Inter è 1ª, e con questo post la serie finisce: nell'ultima pagina c'è la classifica completa, dalla prima alla ventesima.\n\nStasera c'è il derby a San Siro. ⬇️\n\nE voi, siete d'accordo che questa rosa sia la più forte delle venti?\n\n#LeVentiSquadre #SerieA #Inter #calcio #PioEsposito #Barella #pallalungaepedalare",
+  "pagine": [
+    {
+      "file": "post.jpg",
+      "sha256": "35fc617200d6d8f7d15f4d572dbbc2f2e28ea9f23db694dbd93d960b525a03b7"
+    },
+    {
+      "file": "post-2.jpg",
+      "sha256": "61bb026e22ec988db9a88f8699e2ae5cd7f3d2a2ae39b41118cf790b294aa137"
+    },
+    {
+      "file": "post-3.jpg",
+      "sha256": "68f77d0bdd17a796948ee36d180db1251bcbf926d3d00d1fd7f2aa9cce963dd0"
+    },
+    {
+      "file": "post-4.jpg",
+      "sha256": "c21d72eb99541ea71cc834f449e095a5eaaede7bba729d869787c086ac5f7925"
+    },
+    {
+      "file": "post-5.jpg",
+      "sha256": "2b125fcecbb26a19569152658ce8e43ee7a6f3f22866a349da210c12bca44181"
+    },
+    {
+      "file": "post-6.jpg",
+      "sha256": "002ff558077e7a01852dfcc51f2b39f2963b51fc51e91107b0cf8cf37e625edd"
+    },
+    {
+      "file": "post-7.jpg",
+      "sha256": "06f999157823ed7a64666d5fd85a3586d2de506a2109d867b39d78b1109affbc"
+    }
+  ],
+  "caratteri": 1099,
+  "hashtag": 7,
+  "avvisi": [
+    "pagina 1: grafica: la scritta «, 23 gol fatti e 10 subiti. (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 2: grafica: la scritta «Ringiovanire senza smontare (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 2: grafica: la scritta «7 volte su 8 da titolare: 625 minuti, 1  (3 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 4: grafica: la scritta «, quattro volte da titolare e un gol. (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 5: grafica: la scritta «Un posto sotto dove la mettiamo noi (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 5: grafica: la scritta «Se la difesa continua così: 10 gol presi (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 5: grafica: la scritta «Se l'attacco tiene: 23 gol fatti in otto (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 5: grafica: la scritta «7 partite e 630 minuti: 10 gol subiti da (3 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "fa0f6b456a28d1a9",
+  "approvata_il": null,
+  "sha256_jpeg": "35fc617200d6d8f7d15f4d572dbbc2f2e28ea9f23db694dbd93d960b525a03b7",
+  "peso_jpeg_byte": 408406,
+  "esce_il": "2026-10-31T12:30+01:00",
+  "esce_il_utc": "2026-10-31T11:30+00:00",
+  "preparato_il": "2026-10-29T05:00:13"
+}
