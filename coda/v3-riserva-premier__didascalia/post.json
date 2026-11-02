@@ -1,0 +1,28 @@
+{
+  "id": "v3-riserva-premier/didascalia.md",
+  "titolo": "Riserva: partite di Premier League in carriera",
+  "didascalia": "In Serie A ci sono giocatori che la Premier League l'hanno vissuta per anni, non di passaggio 👀\n\nAbbiamo contato le partite di Premier giocate in carriera, solo nelle stagioni già finite, fino al 2025/26. Sotto il nome ci sono i gol segnati in quelle partite.\n\nDavanti a tutti c'è Douglas Luiz con centonovantasei partite e ventuno gol, poi McTominay a centosettantotto. Il numero più curioso però è quello di Winks: centocinquanta partite in Inghilterra e due gol in tutto. Ché Adams ne ha giocate meno, centoventiquattro, ma di gol ne ha fatti venticinque, più di tutti gli altri sette.\n\nSono otto giocatori scelti uno per squadra, non la classifica completa del campionato.\n\nDouglas Luiz o McTominay: chi dei due vi ha convinto di più da quando è arrivato in Italia? ⬇️\n\n#SerieA #calcio #PremierLeague #DouglasLuiz #McTominay #pallalungaepedalare",
+  "caratteri": 849,
+  "hashtag": 6,
+  "avvisi": [
+    "foto di curtis-jones: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del inter 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "9f715b028a430ca5",
+  "approvata_il": null,
+  "sha256_jpeg": "97c2b9306763ee42d172592acfe824b3977d173553acac19aca6bf693549739e",
+  "peso_jpeg_byte": 633818,
+  "esce_il": null,
+  "esce_il_utc": null,
+  "riserva_fino": "2026-12-31",
+  "preparato_il": "2026-11-02T15:35:29"
+}
