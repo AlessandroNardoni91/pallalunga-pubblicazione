@@ -1,8 +1,8 @@
 {
   "id": "v3-tiri-carriera/didascalia.md",
   "titolo": "Partite di Champions League in carriera, otto giocatori della Serie A",
-  "didascalia": "Ci sono notti di Champions che uno si porta dietro per tutta la vita. E poi c'è chi le ha vissute centoquarantadue volte 👀\n\nAbbiamo contato le partite di Champions League giocate in carriera da otto giocatori che oggi stanno in Serie A, uno per squadra, fermandoci alle stagioni già finite. Sotto il nome ci sono i gol segnati in quelle partite.\n\nDavanti c'è Luka Modrić, quattordici stagioni diverse con la musichetta prima del fischio d'inizio. Sotto porta, però, è un altro discorso: nove gol in tutta la sua Champions. Il contrario di lui è Álvaro Morata, cinquantatré partite in meno e venti gol in più.\n\nDe Bruyne e Mkhitaryan stanno sopra le settanta presenze, Bernardeschi chiude il gruppo a trentuno. E sono otto giocatori scelti uno per squadra, non la classifica completa del campionato.\n\nSecondo voi chi di questi ha pesato davvero in Europa e chi invece c'era e basta? ⬇️\n\n#SerieA #Champions #calcio #numeri #Modric #Morata #pallalungaepedalare",
-  "caratteri": 957,
+  "didascalia": "Ci sono notti di Champions che uno si porta dietro per tutta la vita. E poi c'è chi le ha vissute centoquarantadue volte 👀\n\nAbbiamo contato le partite di Champions League giocate in carriera da otto giocatori che oggi stanno in Serie A, uno per squadra, fermandoci alle stagioni già finite. Sotto il nome ci sono i gol segnati in quelle partite.\n\nDavanti c'è Luka Modrić, quattordici stagioni diverse con la musichetta prima del fischio d'inizio. Sotto porta, però, è un altro discorso: nove gol in tutta la sua Champions. Il contrario di lui è Paulo Dybala: ottantanove partite in meno e il doppio dei gol.\n\nDe Bruyne e Mkhitaryan stanno sopra le settanta presenze, Moise Kean chiude il gruppo a ventiquattro, con cinque gol. E sono otto giocatori scelti uno per squadra, non la classifica completa del campionato.\n\nSecondo voi chi di questi ha pesato davvero in Europa e chi invece c'era e basta? ⬇️\n\n#SerieA #Champions #calcio #numeri #Modric #Dybala #pallalungaepedalare",
+  "caratteri": 974,
   "hashtag": 7,
   "avvisi": [
     "foto di henrikh-mkhitaryan: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del inter 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)",
@@ -18,11 +18,11 @@
     "numeri della didascalia rintracciabili nelle fonti",
     "scheda delle fonti più recente dell'ultima giornata"
   ],
-  "impronta_approvata": "89119e95b84ce98a",
+  "impronta_approvata": "17154cc35072bba4",
   "approvata_il": null,
-  "sha256_jpeg": "218f9781ee70c0673141a1c522038c5fff1356563a74d9184c1c223cd4440a8a",
-  "peso_jpeg_byte": 568961,
+  "sha256_jpeg": "301f783a37bbd47925a64668f9b11ea393c911709c623c0eedbdc51bbdb50264",
+  "peso_jpeg_byte": 577218,
   "esce_il": "2026-11-06T18:30+01:00",
   "esce_il_utc": "2026-11-06T17:30+00:00",
-  "preparato_il": "2026-11-02T08:42:26"
+  "preparato_il": "2026-11-02T15:03:42"
 }
