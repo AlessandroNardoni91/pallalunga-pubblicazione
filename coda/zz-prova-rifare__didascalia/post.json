@@ -1,8 +1,8 @@
 {
   "id": "zz-prova-rifare/didascalia.md",
   "titolo": "Prova del rifare automatico (post finto: rispondi rifare)",
-  "didascalia": "Collaudo del rifare automatico, qui dentro non c'è niente di vero 👀 Quello che si misura è una cosa sola: quando la risposta all'email è un rifare, il programma che la legge deve far partire subito il redattore, e una volta sola, mentre le approvazioni non devono far partire niente.\n\nLa lunghezza non è casuale. Il controllo automatico rimanda indietro qualunque didascalia più corta di cinquecento caratteri, quindi anche una prova deve avere il peso di un testo buono, e questo secondo capoverso serve soltanto a riempire lo spazio.\n\nA questa email si risponde con la riga scritta nella grafica ⬇️\n\n#prova #collaudo #rifare #finto #pallalungaepedalare",
-  "caratteri": 654,
+  "didascalia": "Collaudo del rifare automatico, qui dentro non c'è niente di vero 👀 Quello che si misura è una cosa sola: quando la risposta all'email è un rifare, il programma che la legge deve far partire subito il redattore, e una volta sola, mentre le approvazioni non devono far partire niente.\n\nLa lunghezza non è casuale. Il controllo automatico rimanda indietro qualunque didascalia più corta di cinquecento caratteri, quindi anche una prova deve avere il peso di un testo buono, e questo secondo capoverso serve soltanto a riempire lo spazio.\n\nA questa email si risponde con la riga scritta nella grafica ⬇️\n\nProva riuscita\n\n#prova #collaudo #rifare #finto #pallalungaepedalare",
+  "caratteri": 670,
   "hashtag": 5,
   "avvisi": [
     "la grafica zz-prova-rifare/post.png non è nell'elenco di generatore/ridisegna_tutto.py: i controlli su grafica, numeri in mostra e foto sono saltati"
@@ -11,11 +11,11 @@
     "regole di scrittura della didascalia",
     "numeri della didascalia rintracciabili nelle fonti"
   ],
-  "impronta_approvata": "c22410d9f2d0b85b",
+  "impronta_approvata": "b1e350418ce32115",
   "approvata_il": null,
   "sha256_jpeg": "3c1778e461321a7a8611fa1dd205ab6bb65645f6719ddf81b8d8055c4e652e55",
   "peso_jpeg_byte": 128885,
   "esce_il": "2026-12-31T12:30+01:00",
   "esce_il_utc": "2026-12-31T11:30+00:00",
-  "preparato_il": "2026-11-02T11:27:05"
+  "preparato_il": "2026-11-02T10:38:43"
 }
