@@ -1,11 +1,12 @@
 {
   "id": "v3-tiri-carriera/didascalia.md",
-  "titolo": "Tiri in Serie A in carriera, otto giocatori del campionato",
-  "didascalia": "Di un attaccante si contano i gol. Quasi mai si conta quante volte ci ha provato 👀\n\nAbbiamo preso otto giocatori della Serie A di quest'anno e contato i tiri delle loro stagioni di campionato già finite, fino al 2025/26. La stagione in corso non è dentro, così il numero resta fermo.\n\nDavanti c'è Moise Kean con trecentocinque tiri in centosettantadue partite, poco meno di due a partita. Dietro di lui Lorenzo Colombo, che ne ha tirati duecentotto pur avendo giocato trentaquattro partite in meno. Nikola Vlašić è il primo che non fa il centravanti.\n\nIsaksen e Beto sono fermi tutti e due a centoventicinque, con trentatré partite di differenza. E questi sono i numeri di otto giocatori, non la classifica completa del campionato.\n\nSecondo voi chi tira troppo e chi invece dovrebbe provarci molto più spesso? ⬇️\n\n#SerieA #calcio #numeri #Kean #Vlasic #fantacalcio #pallalungaepedalare",
-  "caratteri": 885,
+  "titolo": "Partite di Champions League in carriera, otto giocatori della Serie A",
+  "didascalia": "Ci sono notti di Champions che uno si porta dietro per tutta la vita. E poi c'è chi le ha vissute centoquarantadue volte 👀\n\nAbbiamo contato le partite di Champions League giocate in carriera da otto giocatori che oggi stanno in Serie A, uno per squadra, fermandoci alle stagioni già finite. Sotto il nome ci sono i gol segnati in quelle partite.\n\nDavanti c'è Luka Modrić, quattordici stagioni diverse con la musichetta prima del fischio d'inizio. Sotto porta, però, è un altro discorso: nove gol in tutta la sua Champions. Il contrario di lui è Álvaro Morata, cinquantatré partite in meno e venti gol in più.\n\nDe Bruyne e Mkhitaryan stanno sopra le settanta presenze, Bernardeschi chiude il gruppo a trentuno. E sono otto giocatori scelti uno per squadra, non la classifica completa del campionato.\n\nSecondo voi chi di questi ha pesato davvero in Europa e chi invece c'era e basta? ⬇️\n\n#SerieA #Champions #calcio #numeri #Modric #Morata #pallalungaepedalare",
+  "caratteri": 957,
   "hashtag": 7,
   "avvisi": [
-    "grafica: la scritta «Fiorentina · 62 gare (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto"
+    "foto di henrikh-mkhitaryan: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del inter 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)",
+    "foto di luka-modric: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del milan 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)"
   ],
   "controlli_fatti": [
     "regole di scrittura della didascalia",
@@ -17,11 +18,11 @@
     "numeri della didascalia rintracciabili nelle fonti",
     "scheda delle fonti più recente dell'ultima giornata"
   ],
-  "impronta_approvata": "5eb291d88e2a0d04",
+  "impronta_approvata": "89119e95b84ce98a",
   "approvata_il": null,
-  "sha256_jpeg": "b7ea2e8edbd8a233af0bef1227e4d745c3025dd604b7ae6eac8627d8b938cb83",
-  "peso_jpeg_byte": 581128,
+  "sha256_jpeg": "218f9781ee70c0673141a1c522038c5fff1356563a74d9184c1c223cd4440a8a",
+  "peso_jpeg_byte": 568961,
   "esce_il": "2026-11-06T18:30+01:00",
   "esce_il_utc": "2026-11-06T17:30+00:00",
-  "preparato_il": "2026-11-02T04:57:41"
+  "preparato_il": "2026-11-02T08:42:26"
 }
