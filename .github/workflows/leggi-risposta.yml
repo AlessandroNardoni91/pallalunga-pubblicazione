@@ -21,4 +21,7 @@ jobs:
       - name: Registra la decisione
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # dal 02/11/2026 il rifare automatico parte solo da qui (non più a ogni etichetta)
+          RIFARE_ATTIVITA: trig_01W8kYX3ExZ6XP2qw6oLbH1z
+          RIFARE_CHIAVE: ${{ secrets.RIFARE_CHIAVE }}
         run: python3 strumenti/leggi_risposta.py

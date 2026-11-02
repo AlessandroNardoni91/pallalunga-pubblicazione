@@ -102,6 +102,36 @@ def github(metodo: str, percorso: str, dati: dict | None = None):
             raise SystemExit(f"GitHub ha risposto {errore.code} a {metodo} {percorso}")
 
 
+def avvia_rifare(numero: int) -> str:
+    """Fa partire l'attività «Palla Lunga: rifare automatico» su claude.ai con il suo indirizzo con chiave
+    (dal 02/11/2026). Prima partiva da sola a OGNI etichetta messa a una scheda: 62 corse a vuoto su 63
+    fra il 26/10 e il 02/11. Ora parte solo da qui, dopo il commento «Registrato: da rifare», che è dove
+    la corsa legge la nota. Restituisce "" se è partita, altrimenti il motivo.
+    Documentazione: platform.claude.com/docs/en/api/claude-code/routines-fire"""
+    attivita, chiave = os.environ.get("RIFARE_ATTIVITA", ""), os.environ.get("RIFARE_CHIAVE", "")
+    if not (attivita and chiave):
+        return "manca la chiave dell'attività nei segreti del repository"
+    richiesta = urllib.request.Request(f"https://api.anthropic.com/v1/claude_code/routines/{attivita}/fire", method="POST",
+                                       data=json.dumps({"text": f"Rifare registrato sulla scheda {numero}."}).encode("utf-8"),
+                                       headers={"Authorization": "Bearer " + chiave, "anthropic-version": "2023-06-01",
+                                                "anthropic-beta": "experimental-cc-routine-2026-04-01",
+                                                "Content-Type": "application/json", "User-Agent": "pallalunga"})
+    for tentativo in range(3):
+        try:
+            with urllib.request.urlopen(richiesta, timeout=30) as risposta:
+                print("Rifare avviato:", json.loads(risposta.read()).get("claude_code_session_url", ""))
+                return ""
+        except urllib.error.HTTPError as errore:
+            if errore.code >= 500 and tentativo < 2:
+                print(f"claude.ai ha risposto {errore.code}: riprovo fra {15 * (tentativo + 1)} secondi")
+                time.sleep(15 * (tentativo + 1))
+                continue
+            return f"claude.ai ha risposto {errore.code}"
+        except urllib.error.URLError as errore:
+            return f"claude.ai non raggiungibile ({errore.reason})"
+    return "claude.ai non ha risposto"
+
+
 def git(*argomenti: str) -> None:
     subprocess.run(["git", *argomenti], check=True)
 
@@ -149,6 +179,12 @@ def main() -> int:
     else:
         testo = f"Registrato: **scartato**{versione}. Questo post non uscirà. Chiudo la scheda."
     github("POST", f"/issues/{numero}/comments", {"body": testo})
+    if esito["decisione"] == "rifare":
+        problema = avvia_rifare(numero)
+        if problema:
+            github("POST", f"/issues/{numero}/comments", {"body": f"Attenzione: il rifare automatico non è partito ({problema}). "
+                                                                  "La nota resta registrata: la applica il redattore del mattino alle 05:30."})
+        print("Rifare automatico:", "partito" if not problema else "NON partito, " + problema)
     if esito["decisione"] == "scarta":
         github("PATCH", f"/issues/{numero}", {"state": "closed", "state_reason": "not_planned"})
         pacchetto = re.search(r"<!-- pacchetto:(\S+) ", evento["issue"].get("body") or "")
