@@ -1,14 +1,15 @@
 {
   "id": "v3-numeri-kvernadze/didascalia.md",
   "titolo": "Kvernadze in numeri, l'ala del Frosinone che sta sopra tutti",
-  "didascalia": "Sesto posto e venti punti, davanti a Juventus e Napoli: il Frosinone sta facendo un campionato che nessuno aveva previsto. E chi ha la media in pagella più alta fra tutti quelli che hanno giocato tutte e dieci le giornate è uno dei suoi 👀\n\nGiorgi Kvernadze, ala, dieci partite su dieci con un voto e una media di 6,90. Subito dietro c'è un suo compagno di squadra, Calò, a 6,85.\n\nPoi c'è il resto. Tre gol e quattro assist: in tutta la Serie A non c'è nessun altro arrivato ad almeno tre gol e almeno quattro assist. Domenica, nel 2-0 al Torino, ha preso 7 in tutte e tre le pagelle.\n\nSabato il Frosinone va a Cagliari alle 15. Secondo voi a giugno Kvernadze è ancora lì, o a gennaio se lo prende una delle prime? ⬇️\n\n#SerieA #calcio #Frosinone #Kvernadze #fantacalcio #pallalungaepedalare",
-  "caratteri": 789,
+  "didascalia": "Sesto posto e venti punti, davanti a Juventus e Napoli: il Frosinone sta facendo un campionato che nessuno aveva previsto. E chi ha la media in pagella più alta fra tutti quelli che hanno giocato tutte e dieci le giornate è uno dei suoi 👀\n\nGiorgi Kvernadze, ala, dieci partite su dieci con un voto e una media di 6,90. Subito dietro c'è un suo compagno di squadra, Calò, a 6,85.\n\nPoi c'è il resto. Tre gol e quattro assist: in tutta la Serie A non c'è nessun altro arrivato ad almeno tre gol e almeno quattro assist. Domenica scorsa, nel 2-0 al Torino, ha preso 7 in tutte e tre le pagelle.\n\nSabato il Frosinone va a Cagliari alle 15. Secondo voi a giugno Kvernadze è ancora lì, o a gennaio se lo prende una delle prime? ⬇️\n\n#SerieA #calcio #Frosinone #Kvernadze #fantacalcio #pallalungaepedalare",
+  "caratteri": 796,
   "hashtag": 6,
   "avvisi": [
     "grafica: la scritta «Dietro Calò\na 6,85 (3 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
     "grafica: la scritta «la media più alta fra chi ha dieci parti (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
     "grafica: la scritta «3 gol e 4 assist:\nnessun altro in A (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
-    "grafica: la scritta «Non ne ha saltata\nnemmeno una (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto"
+    "grafica: la scritta «Non ne ha saltata\nnemmeno una (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "la scheda delle fonti è del 02/11, ma la giornata 10 è finita il 02/11: i numeri della stagione in corso potrebbero essere vecchi"
   ],
   "controlli_fatti": [
     "regole di scrittura della didascalia",
@@ -20,11 +21,11 @@
     "numeri della didascalia rintracciabili nelle fonti",
     "scheda delle fonti più recente dell'ultima giornata"
   ],
-  "impronta_approvata": "2801928313791a00",
+  "impronta_approvata": "f21865a0fb857b29",
   "approvata_il": null,
   "sha256_jpeg": "c31c43833a746b9af36bd36f3b16adf7818d74c95bc1ad5d1d6900ea12a84429",
   "peso_jpeg_byte": 522085,
-  "esce_il": "2026-11-05T18:30+01:00",
-  "esce_il_utc": "2026-11-05T17:30+00:00",
-  "preparato_il": "2026-11-02T04:53:13"
+  "esce_il": "2026-11-06T18:30+01:00",
+  "esce_il_utc": "2026-11-06T17:30+00:00",
+  "preparato_il": "2026-11-03T10:29:17"
 }
