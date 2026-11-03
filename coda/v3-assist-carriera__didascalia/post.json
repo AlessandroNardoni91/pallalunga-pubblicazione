@@ -4,7 +4,9 @@
   "didascalia": "L'assist è la cosa che si dimentica prima. Il gol resta, chi l'ha servito no 👀\n\nAbbiamo contato gli assist in campionato di otto che giocano in Serie A quest'anno, prendendo solo le stagioni finite, fino al 2025/26. La stagione in corso non è contata, così il numero è fermo.\n\nLorenzo Pellegrini sta davanti con quarantanove assist in trecento partite, e ci arriva da trequartista. Dietro ci sono due che di mestiere fanno altro: Pašalić a trentaquattro e Morata a trentatré. Poi Duncan, che di partite in Serie A ne ha trecentoventi, e due a pari merito a venticinque, De Roon e Locatelli, che sono due mediani.\n\nSaelemaekers ne ha ventiquattro in centonovantanove partite, meno della metà delle gare di De Roon. Zaniolo chiude a diciotto.\n\nQuesti sono i numeri di otto giocatori, non la classifica completa del campionato.\n\nDi questi otto, chi vi sembra ancora quello che può far segnare gli altri da qui a maggio? ⬇️\n\n#SerieA #calcio #assist #Pellegrini #Locatelli #pallalungaepedalare",
   "caratteri": 988,
   "hashtag": 6,
-  "avvisi": [],
+  "avvisi": [
+    "la scheda delle fonti è del 01/11, ma la giornata 10 è finita il 02/11: i numeri della stagione in corso potrebbero essere vecchi"
+  ],
   "controlli_fatti": [
     "regole di scrittura della didascalia",
     "niente domande né verdetti dentro la grafica",
@@ -19,7 +21,7 @@
   "approvata_il": null,
   "sha256_jpeg": "cdde87009dbc73e4de3c85ff6bdade787b17fe7279100da55dfcb5d644c0d111",
   "peso_jpeg_byte": 591889,
-  "esce_il": "2026-11-04T18:30+01:00",
-  "esce_il_utc": "2026-11-04T17:30+00:00",
-  "preparato_il": "2026-11-01T04:56:21"
+  "esce_il": "2026-11-05T18:30+01:00",
+  "esce_il_utc": "2026-11-05T17:30+00:00",
+  "preparato_il": "2026-11-03T10:29:08"
 }
