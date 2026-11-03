@@ -6,7 +6,8 @@
   "hashtag": 7,
   "avvisi": [
     "foto di henrikh-mkhitaryan: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del inter 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)",
-    "foto di luka-modric: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del milan 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)"
+    "foto di luka-modric: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del milan 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)",
+    "la scheda delle fonti è del 02/11, ma la giornata 10 è finita il 02/11: i numeri della stagione in corso potrebbero essere vecchi"
   ],
   "controlli_fatti": [
     "regole di scrittura della didascalia",
@@ -22,7 +23,7 @@
   "approvata_il": null,
   "sha256_jpeg": "301f783a37bbd47925a64668f9b11ea393c911709c623c0eedbdc51bbdb50264",
   "peso_jpeg_byte": 577218,
-  "esce_il": "2026-11-06T18:30+01:00",
-  "esce_il_utc": "2026-11-06T17:30+00:00",
-  "preparato_il": "2026-11-02T15:03:42"
+  "esce_il": "2026-11-08T18:30+01:00",
+  "esce_il_utc": "2026-11-08T17:30+00:00",
+  "preparato_il": "2026-11-03T10:29:26"
 }
