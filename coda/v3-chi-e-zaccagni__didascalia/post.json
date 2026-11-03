@@ -1,0 +1,50 @@
+{
+  "id": "v3-chi-e-zaccagni/didascalia.md",
+  "titolo": "Indovina chi: un giocatore della Serie A",
+  "didascalia": "Tre indizi, un giocatore della nostra Serie A. Scorri piano e fermati appena pensi di averlo capito 👀\n\nIl primo indizio è il più difficile: due stagioni in Serie B, sempre con la stessa maglia, prima di salire. Il secondo è un numero di gol in Serie A, diviso fra due squadre. Il terzo è una sera d'estate che chi tifa Italia si ricorda bene.\n\nLa risposta è nell'ultima pagina, ma non barare: prima scrivi il nome qui sotto.\n\nA quale indizio l'avete capito, al primo, al secondo o solo al terzo? ⬇️\n\n#SerieA #calcio #IndovinaChi #quiz #pallalungaepedalare",
+  "pagine": [
+    {
+      "file": "post.jpg",
+      "sha256": "bb0d65f8526c63403a4264f568ffb150d692e40499d0a56f05a645e92c82524a"
+    },
+    {
+      "file": "post-2.jpg",
+      "sha256": "5e275651aecb28779b55c441b9b6e0c5151dcf07562b806bd6dc5f40a82278f7"
+    },
+    {
+      "file": "post-3.jpg",
+      "sha256": "5edfec6fc95707db015bd4a79aac4eaae7e9c0c6a9f49fda7ebc2dfa177741c2"
+    },
+    {
+      "file": "post-4.jpg",
+      "sha256": "32d4c312b94e2026e3096437bae8a734a58a658b61960172e83f86b7d3f28819"
+    },
+    {
+      "file": "post-5.jpg",
+      "sha256": "e8c04e708d8526babd180f26d26c7508436615dc04e313c9a26a01dd8d3dd911"
+    }
+  ],
+  "caratteri": 555,
+  "hashtag": 5,
+  "avvisi": [
+    "pagina 2: grafica: la scritta «, in due stagioni, tutte con la stessa m (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 4: grafica: la scritta «del 2024, contro la Croazia. (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "9f85dcf368d19466",
+  "approvata_il": null,
+  "sha256_jpeg": "bb0d65f8526c63403a4264f568ffb150d692e40499d0a56f05a645e92c82524a",
+  "peso_jpeg_byte": 242485,
+  "esce_il": "2026-11-15T18:30+01:00",
+  "esce_il_utc": "2026-11-15T17:30+00:00",
+  "preparato_il": "2026-11-03T10:51:52"
+}
