@@ -1,0 +1,27 @@
+{
+  "id": "v3-gol-coppe-europee/didascalia.md",
+  "titolo": "Gol nelle coppe europee in carriera, otto giocatori della Serie A",
+  "didascalia": "In Europa non si gioca solo il martedì e il mercoledì. Anche il giovedì sera c'è chi segna, e qualcuno ne ha fatti parecchi 👀\n\nAbbiamo contato i gol in Champions League, Europa League e Conference League di otto giocatori che oggi stanno in Serie A, uno per squadra, fermandoci alle stagioni già finite. Sotto il nome ci sono le partite giocate in quelle tre coppe.\n\nArkadiusz Milik sta davanti a tutti con ventiquattro gol in cinquantacinque partite, e dieci li ha fatti in Champions. Dietro c'è Pedro Gonçalves con undici, poi due a dieci: Gudmundsson, che otto li ha segnati in Conference, e De Ketelaere, che per arrivarci ha avuto bisogno di quasi il doppio delle partite.\n\nIn fondo ce ne sono quattro a sei. Vitinha li ha fatti in venti partite, John Stones in sessantacinque, ma lui di mestiere fa il difensore.\n\nSono otto giocatori scelti uno per squadra, non la classifica completa del campionato.\n\nMilik così in alto ve lo aspettavate, o in cima avreste messo qualcun altro di questi otto? ⬇️\n\n#SerieA #calcio #ChampionsLeague #EuropaLeague #Milik #DeKetelaere #pallalungaepedalare",
+  "caratteri": 1091,
+  "hashtag": 7,
+  "avvisi": [
+    "foto di john-stones: non è annotato da quale club è stata scaricata: guarda a occhio che la maglia sia del inter 2026/27 (per annotarlo: foto_club.py <club> \"Nome\" --rifai)"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "8e6547ac2b0012c6",
+  "approvata_il": null,
+  "sha256_jpeg": "1a8960440fdc2e25aa931916d9be65d4d655bb6d5b57768581c76d2a2234bab6",
+  "peso_jpeg_byte": 586890,
+  "esce_il": "2026-11-10T18:30+01:00",
+  "esce_il_utc": "2026-11-10T17:30+00:00",
+  "preparato_il": "2026-11-04T04:50:46"
+}
