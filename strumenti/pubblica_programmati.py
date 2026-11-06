@@ -145,7 +145,8 @@ def pubblica_uno(scheda: dict, nome: str, cartella: Path, dati: dict, extra: dic
     base = f"https://raw.githubusercontent.com/{ARCHIVIO}/{versione()}/coda/{nome}"
     indirizzo = f"{base}/post.jpg"
     # un carosello (07/10/2026) ha anche post-2.jpg, post-3.jpg...: si controllano tutte le pagine
-    for p in dati.get("pagine") or [{"file": "post.jpg", "sha256": dati["sha256_jpeg"]}]:
+    # un Reel (06/11/2026) ha anche reel.mp4: si controlla come le immagini
+    for p in (dati.get("pagine") or [{"file": "post.jpg", "sha256": dati["sha256_jpeg"]}]) + ([dati["reel"]] if dati.get("reel") else []):
         with urllib.request.urlopen(urllib.request.Request(f"{base}/{p['file']}", headers={"User-Agent": "curl/8"}), timeout=30) as r:
             if hashlib.sha256(r.read()).hexdigest() != p["sha256"]:
                 raise pubblica.ErroreInstagram(f"l'immagine {p['file']} all'indirizzo pubblico non è quella approvata")

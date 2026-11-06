@@ -56,6 +56,9 @@ def testo_scheda(nome: str, d: dict) -> str:
             f"Pagina {n}\n\n![Pagina {n}]({base}/{p['file']})" for n, p in enumerate(pagine, 1))
     else:
         immagini = f"![Il post]({base}/post.jpg)"
+    if d.get("reel"):  # un Reel (06/11/2026): l'immagine è solo l'anteprima, il video si guarda dal collegamento
+        immagini = (f"**È un Reel.** Prima di approvare guarda il video: [apri il Reel]({base}/{d['reel']['file']}). "
+                    "Qui sotto c'è la grafica da cui è fatto.\n\n" + immagini)
     didascalia = "\n".join("> " + riga for riga in d["didascalia"].splitlines())
     uscita = "non ancora fissata"
     if d.get("esce_il"):  # "2026-09-30T18:30+02:00" -> "mercoledì 30/09/2026 alle 18:30 (ora italiana)"

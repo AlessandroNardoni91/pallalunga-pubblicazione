@@ -88,14 +88,15 @@ def cerca_su_instagram(didascalia: str, token: str, conto: str) -> dict | None:
     return next((m for m in ultimi.get("data", []) if (m.get("caption") or "").strip() == didascalia.strip()), None)
 
 
-def aspetta_contenitore(contenitore: str, token: str, cosa: str) -> str:
-    """Instagram scarica e prepara l'immagine con calma: si chiede lo stato finché non è più IN_PROGRESS."""
+def aspetta_contenitore(contenitore: str, token: str, cosa: str, volte: int = 8, pausa: int = 6) -> str:
+    """Instagram scarica e prepara l'immagine con calma: si chiede lo stato finché non è più IN_PROGRESS.
+    Per un video la documentazione Meta consiglia di chiedere per non più di 5 minuti: volte=30, pausa=10."""
     stato = ""
-    for _ in range(8):
+    for _ in range(volte):
         stato = chiedi(contenitore, {"fields": "status_code"}, token).get("status_code", "")
         if stato != "IN_PROGRESS":
             break
-        time.sleep(6)
+        time.sleep(pausa)
     if stato != "FINISHED":
         raise ErroreInstagram(f"il contenitore ({cosa}) non è pronto (stato: {stato or 'nessuno'}): non pubblico")
     return stato
@@ -140,15 +141,27 @@ def pubblica(cartella: Path, indirizzo_immagine: str, davvero: bool = False, avv
             aspetta_contenitore(figlio, token, f"pagina {numero}")
             figli.append(figlio)
         campi.update({"media_type": "CAROUSEL", "children": ",".join(figli)})
+    elif dati.get("reel"):
+        # REEL (documentazione Meta letta il 06/11/2026): media_type=REELS e video_url, il video accanto a post.jpg.
+        # share_to_feed=true: esce anche nella griglia del profilo. thumb_offset: la copertina è il fotogramma a 8,5
+        # secondi, quello con la grafica completa. La musica della libreria di Instagram da programma non si può usare.
+        avvisa("Instagram scarica e prepara il video del Reel…")
+        base = indirizzo_immagine.rsplit("/", 1)[0]
+        campi.update({"media_type": "REELS", "video_url": f"{base}/{dati['reel']['file']}", "share_to_feed": "true",
+                      "thumb_offset": str(dati["reel"].get("copertina_ms", 8500))})
     else:
         avvisa("Instagram scarica e prepara l'immagine…")
         campi["image_url"] = indirizzo_immagine
     contenitore = ordina(f"{conto}/media", campi, token).get("id")
     if not contenitore:
         raise ErroreInstagram("Instagram non ha restituito il contenitore")
-    stato = aspetta_contenitore(contenitore, token, "carosello" if pagine else "immagine")
+    if dati.get("reel"):
+        stato = aspetta_contenitore(contenitore, token, "Reel", volte=30, pausa=10)
+    else:
+        stato = aspetta_contenitore(contenitore, token, "carosello" if pagine else "immagine")
     if not davvero:
-        cosa = f"le {len(pagine)} pagine sono state scaricate e preparate" if pagine else "l'immagine è stata scaricata e preparata"
+        cosa = (f"le {len(pagine)} pagine sono state scaricate e preparate" if pagine else
+                "il video del Reel è stato scaricato e preparato" if dati.get("reel") else "l'immagine è stata scaricata e preparata")
         avvisa(f"Prova generale riuscita: {cosa} da Instagram. Non ho pubblicato.")
         return {"prova_generale": True, "contenitore": contenitore, "stato": stato, "pagine": len(pagine or [1])}
 
@@ -166,7 +179,7 @@ def pubblica(cartella: Path, indirizzo_immagine: str, davvero: bool = False, avv
     ricevuta = {"id": dati["id"], "titolo": dati["titolo"], "id_instagram": id_post, "indirizzo": letto.get("permalink", ""),
                 "pubblicato_il": letto.get("timestamp") or datetime.now().isoformat(timespec="seconds"),
                 "didascalia_uguale": (letto.get("caption") or "").strip() == dati["didascalia"].strip(),
-                **({"pagine": len(dati["pagine"])} if dati.get("pagine") else {})}
+                **({"pagine": len(dati["pagine"])} if dati.get("pagine") else {}), **({"reel": True} if dati.get("reel") else {})}
     (cartella / "pubblicato.json").write_text(json.dumps(ricevuta, ensure_ascii=False, indent=2), encoding="utf-8")
     segno.unlink()
     if not ricevuta["indirizzo"]:
@@ -188,6 +201,12 @@ def leggi_pacchetto(cartella: Path) -> dict:
             raise ErroreInstagram(f"{p['file']} non è più quella preparata: va rifatto il pacchetto")
     if len(dati.get("pagine") or []) > 10:
         raise ErroreInstagram("un carosello può avere al massimo 10 pagine")
+    if dati.get("reel"):
+        video = cartella / dati["reel"]["file"]
+        if not video.exists() or hashlib.sha256(video.read_bytes()).hexdigest() != dati["reel"]["sha256"]:
+            raise ErroreInstagram("il video del Reel non è più quello preparato: va rifatto il pacchetto")
+        if dati.get("pagine"):
+            raise ErroreInstagram("un Reel non può essere anche un carosello")
     return dati
 
 

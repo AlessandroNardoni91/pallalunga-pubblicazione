@@ -1,0 +1,28 @@
+{
+  "id": "zz-prova-reel/didascalia.md",
+  "titolo": "Prova del Reel (post finto, NON approvare)",
+  "didascalia": "Prova tecnica di un Reel della pagina: non è un post vero e non uscirà 👀\n\nServe solo a controllare che il video arrivi a Instagram nel formato giusto, con la musica e la frase in alto.\n\nIl programma prende la griglia degli otto già approvata, fa comparire i giocatori uno alla volta, aggiunge l'inizio di un brano libero da diritti e prepara il video verticale. Poi lo mette nella coda pubblica insieme all'immagine, e la scheda di revisione mostra il collegamento per guardarlo prima di decidere.\n\nQuesta scheda va lasciata così, senza approvarla: la chiude da sola la sessione sul PC dopo la prova ⬇️\n\n#SerieA #calcio #prova #Reel #pallalungaepedalare",
+  "reel": {
+    "file": "reel.mp4",
+    "sha256": "0114ce20731788d08ed684829f1249841d04848c8f4530a44856a62ec03c3b06",
+    "peso_byte": 1254835
+  },
+  "caratteri": 653,
+  "hashtag": 5,
+  "avvisi": [
+    "la grafica zz-prova-reel/post.png non è nell'elenco di generatore/ridisegna_tutto.py: i controlli su grafica, numeri in mostra e foto sono saltati",
+    "la scheda delle fonti è del 01/11, ma la giornata 10 è finita il 02/11: i numeri della stagione in corso potrebbero essere vecchi"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "e5ad7178ce966d86",
+  "approvata_il": null,
+  "sha256_jpeg": "82a0af05bf40df6ff57834720d84a55a0cc8be0e835e2b0be6774dcb564ba320",
+  "peso_jpeg_byte": 635504,
+  "esce_il": "2026-12-31T18:30+01:00",
+  "esce_il_utc": "2026-12-31T17:30+00:00",
+  "preparato_il": "2026-11-06T16:55:36"
+}
