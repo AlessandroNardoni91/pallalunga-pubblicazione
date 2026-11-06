@@ -57,7 +57,10 @@ def testo_scheda(nome: str, d: dict) -> str:
     else:
         immagini = f"![Il post]({base}/post.jpg)"
     if d.get("reel"):  # un Reel (06/11/2026): l'immagine è solo l'anteprima, il video si guarda dal collegamento
-        immagini = (f"**È un Reel.** Prima di approvare guarda il video: [apri il Reel]({base}/{d['reel']['file']}). "
+        # raw.githubusercontent dà il video come file generico (sul telefono si scarica invece di partire); jsDelivr
+        # dà lo stesso file, stessa impronta, come video/mp4, e il browser lo fa vedere (provato il 06/11/2026)
+        video = f"https://cdn.jsdelivr.net/gh/{ARCHIVIO}@{VERSIONE}/coda/{nome}/{d['reel']['file']}"
+        immagini = (f"**È un Reel.** Prima di approvare guarda il video: [apri il Reel]({video}). "
                     "Qui sotto c'è la grafica da cui è fatto.\n\n" + immagini)
     didascalia = "\n".join("> " + riga for riga in d["didascalia"].splitlines())
     uscita = "non ancora fissata"
