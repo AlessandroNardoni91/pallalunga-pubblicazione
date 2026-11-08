@@ -4,13 +4,14 @@
   "didascalia": "Fra chi gioca ancora in Serie A, i primi quattro per gol in campionato stanno tutti in cinque gol 👀\n\nSono i gol di tutta la carriera in Serie A, fino alla stagione scorsa: quelli di quest'anno non li abbiamo contati, così la classifica non cambia.\n\nDavanti c'è Lautaro con 132, poi Dybala con 131, che però ha giocato cento partite più di lui. Berardi è a 130 e li ha segnati tutti con la stessa maglia, Zapata a 127 in cinque squadre diverse.\n\nAll'ottavo posto c'è un pareggio a 59 fra Pinamonti e Çalhanoğlu: abbiamo messo Pinamonti perché ci ha messo meno partite, 248 contro 285.\n\nFra Lautaro e Dybala, chi arriva primo alla fine di questa stagione? ⬇️\n\n#SerieA #calcio #Lautaro #Dybala #Berardi #Reels #pallalungaepedalare",
   "reel": {
     "file": "reel.mp4",
-    "sha256": "151851f175ecb696860133c3993a64b2055cca05b129ca09040ce692cc73ea26",
-    "peso_byte": 1208081,
+    "sha256": "3852072872b9657f5745218661e394353476e1d2bb951959e0a2a3ac698ff128",
+    "peso_byte": 1213760,
     "nel_profilo": false
   },
   "caratteri": 727,
   "hashtag": 7,
   "avvisi": [
+    "grafica: la scritta «Sassuolo · 340 gare (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
     "la scheda delle fonti è del 22/10, ma la giornata 10 è finita il 02/11: i numeri della stagione in corso potrebbero essere vecchi"
   ],
   "controlli_fatti": [
@@ -23,11 +24,11 @@
     "numeri della didascalia rintracciabili nelle fonti",
     "scheda delle fonti più recente dell'ultima giornata"
   ],
-  "impronta_approvata": "e47d6bf58e92d275",
+  "impronta_approvata": "97809edfc823cac6",
   "approvata_il": null,
   "sha256_jpeg": "ee02374f1c56bf11417802edd0970ed3b1229fc5efaeaaef744c22d1298fa0bf",
   "peso_jpeg_byte": 590777,
   "esce_il": "2026-11-12T12:30+01:00",
   "esce_il_utc": "2026-11-12T11:30+00:00",
-  "preparato_il": "2026-11-08T11:10:36"
+  "preparato_il": "2026-11-08T23:37:08"
 }
