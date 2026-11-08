@@ -143,11 +143,13 @@ def pubblica(cartella: Path, indirizzo_immagine: str, davvero: bool = False, avv
         campi.update({"media_type": "CAROUSEL", "children": ",".join(figli)})
     elif dati.get("reel"):
         # REEL (documentazione Meta letta il 06/11/2026): media_type=REELS e video_url, il video accanto a post.jpg.
-        # share_to_feed=true: esce anche nella griglia del profilo. thumb_offset: la copertina è il fotogramma a 8,5
-        # secondi, quello con la grafica completa. La musica della libreria di Instagram da programma non si può usare.
+        # share_to_feed=true: esce anche nella griglia del profilo; "nel_profilo": false (08/11/2026, i Reel fatti dai
+        # post già usciti) lo tiene solo nella scheda Reels. thumb_offset: la copertina è il fotogramma a 8,5 secondi,
+        # quello con la grafica completa. La musica della libreria di Instagram da programma non si può usare.
         avvisa("Instagram scarica e prepara il video del Reel…")
         base = indirizzo_immagine.rsplit("/", 1)[0]
-        campi.update({"media_type": "REELS", "video_url": f"{base}/{dati['reel']['file']}", "share_to_feed": "true",
+        nel_profilo = "true" if dati["reel"].get("nel_profilo", True) else "false"
+        campi.update({"media_type": "REELS", "video_url": f"{base}/{dati['reel']['file']}", "share_to_feed": nel_profilo,
                       "thumb_offset": str(dati["reel"].get("copertina_ms", 8500))})
     else:
         avvisa("Instagram scarica e prepara l'immagine…")

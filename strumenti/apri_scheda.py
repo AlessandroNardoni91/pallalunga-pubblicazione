@@ -61,7 +61,8 @@ def testo_scheda(nome: str, d: dict) -> str:
         # dà lo stesso file, stessa impronta, come video/mp4, e il browser lo fa vedere (provato il 06/11/2026)
         video = f"https://cdn.jsdelivr.net/gh/{ARCHIVIO}@{VERSIONE}/coda/{nome}/{d['reel']['file']}"
         immagini = (f"**È un Reel.** Prima di approvare guarda il video: [apri il Reel]({video}). "
-                    "Qui sotto c'è la grafica da cui è fatto.\n\n" + immagini)
+                    + ("Esce **solo nella scheda Reels** del profilo, non nella griglia. " if d["reel"].get("nel_profilo") is False else "")
+                    + "Qui sotto c'è la grafica da cui è fatto.\n\n" + immagini)
     didascalia = "\n".join("> " + riga for riga in d["didascalia"].splitlines())
     uscita = "non ancora fissata"
     if d.get("esce_il"):  # "2026-09-30T18:30+02:00" -> "mercoledì 30/09/2026 alle 18:30 (ora italiana)"
