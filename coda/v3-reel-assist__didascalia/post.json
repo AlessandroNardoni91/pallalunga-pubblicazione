@@ -1,0 +1,33 @@
+{
+  "id": "v3-reel-assist/didascalia.md",
+  "titolo": "Reel: Assist in Serie A in carriera",
+  "didascalia": "Quarantanove assist in trecento partite: Lorenzo Pellegrini è quello che ha fatto segnare di più, fra otto giocatori della nostra Serie A 👀\n\nAbbiamo contato gli assist in campionato delle stagioni finite, fino al 2025/26, così il numero resta fermo.\n\nDietro Pellegrini ci sono due che di mestiere fanno altro: Pašalić con trentaquattro e Lazzari, un terzino, con ventinove. De Roon e Locatelli sono appaiati a venticinque, e sono due mediani. Saelemaekers ne ha ventiquattro in centonovantanove partite.\n\nQuesti sono i numeri di otto giocatori, non la classifica completa del campionato.\n\nChi di questi otto vi ha fatto vincere più partite al fantacalcio? ⬇️\n\n#SerieA #calcio #assist #Pellegrini #Reels #pallalungaepedalare",
+  "reel": {
+    "file": "reel.mp4",
+    "sha256": "fed84faa2c11625dd9570f8107be7cdb8b74f43bb2b43242f5609d03ee818e42",
+    "peso_byte": 1236667,
+    "nel_profilo": false
+  },
+  "caratteri": 723,
+  "hashtag": 6,
+  "avvisi": [
+    "la scheda delle fonti è del 01/11, ma la giornata 10 è finita il 02/11: i numeri della stagione in corso potrebbero essere vecchi"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "a2fc543dca5454f5",
+  "approvata_il": null,
+  "sha256_jpeg": "82a0af05bf40df6ff57834720d84a55a0cc8be0e835e2b0be6774dcb564ba320",
+  "peso_jpeg_byte": 635504,
+  "esce_il": "2026-11-15T12:30+01:00",
+  "esce_il_utc": "2026-11-15T11:30+00:00",
+  "preparato_il": "2026-11-08T11:11:09"
+}
