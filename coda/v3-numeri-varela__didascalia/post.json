@@ -1,0 +1,33 @@
+{
+  "id": "v3-numeri-varela/didascalia.md",
+  "titolo": "Varela in numeri, il capocannoniere dopo 11 giornate",
+  "didascalia": "Il capocannoniere della Serie A gioca nel Monza, diciottesimo in classifica. Si chiama Gustavo Varela 👀\n\nDopo undici giornate ha segnato nove gol in dieci partite. Malen e Raimondo lo inseguono a otto, tutti gli altri sono più indietro.\n\nIl Monza in tutto ne ha fatti diciassette, quindi più della metà portano la sua firma. Due sono su rigore, e li ha tirati tutti e due lui. Ci aggiunge un assist e una media voto di 6,7.\n\nIl problema è quello che succede intorno. Il Monza ha sette punti, otto sconfitte in undici partite e venticinque gol subiti. Dopo la sosta, lunedì 23 novembre, arriva la Fiorentina.\n\nVarela a fine stagione arriva a quindici gol, anche se il Monza resta in fondo alla classifica? ⬇️\n\n#SerieA #calcio #Monza #Varela #fantacalcio #capocannoniere #pallalungaepedalare",
+  "caratteri": 789,
+  "hashtag": 7,
+  "avvisi": [
+    "grafica: la scritta «Malen e Raimondo\na quota 8 (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "grafica: la scritta «gol in campionato, nessuno ne ha segnati (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "grafica: la scritta «2 rigori su 2\ne 1 assist (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "grafica: la scritta «i gol del Monza in tutto: più della metà (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "grafica: la scritta «Media voto 6,7\nin 10 partite (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "grafica: la scritta «i punti del Monza, diciottesimo in class (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "foto gustavo-varela-sagoma.png ingrandita 1.6 volte: può risultare sgranata"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "ebf54e8e415699b4",
+  "approvata_il": null,
+  "sha256_jpeg": "9542b1933c8f3c4c19baab6eba62386ce7241ef107078caa52a4830e837fd3e4",
+  "peso_jpeg_byte": 470715,
+  "esce_il": "2026-11-13T18:30+01:00",
+  "esce_il_utc": "2026-11-13T17:30+00:00",
+  "preparato_il": "2026-11-10T05:00:49"
+}
