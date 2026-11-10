@@ -55,6 +55,7 @@ FINESTRA_ORE = 6  # GitHub fa 7-8 giri al giorno, non 96: buco più lungo visto 
 # quanto un giro può restare acceso ad aspettare: GitHub ferma un giro dopo 6 ore, il limite nel file
 # del programma di GitHub è 5 ore e 55 minuti, qui si lascia margine per pubblicare dopo l'attesa
 ATTESA_MAX = timedelta(hours=5, minutes=20)
+CONTROLLO = timedelta(minutes=10)  # ogni quanto il giro acceso ricontrolla schede, approvazioni e riserve
 PROMEMORIA_ORE = 3
 FERMI = {"in-pubblicazione", "pubblicato", "errore", "scaduto", "saltato"}
 ORARI = ["12:30", "18:30"]  # gli orari fissi di ogni giorno, ora italiana (orari.json li può cambiare)
@@ -349,17 +350,35 @@ def main() -> int:
     for nome, colore in (("scaduto", "5C6A62"), ("promemoria", "B98900")):
         github("POST", "/labels", {"name": nome, "color": colore})
     giro_del_permesso()
+    if PROVA:  # la prova fa un giro solo, come prima, e non accende la catena
+        while True:
+            prossima = giro_dei_post(datetime.now(timezone.utc))
+            if prossima is None or prossima - inizio > ATTESA_MAX:
+                return 0
+            attesa = (prossima - datetime.now(timezone.utc)).total_seconds()
+            if attesa > 0:
+                time.sleep(attesa + 5)
+            git("pull", "-q", "--rebase", "origin", "main")
+    # LA CATENA (10/11/2026). GitHub fa partire questo programma ogni 3-7 ore invece che ogni 15 minuti: il 09/11
+    # fra un giro e l'altro sono passate 10 ore e le 18:30 sono rimaste vuote (né il post né la riserva). Ora il
+    # giro resta acceso fino a ATTESA_MAX e ricontrolla schede, approvazioni e riserve ogni CONTROLLO; prima di
+    # chiudersi fa partire il giro successivo (workflow_dispatch, che il GITHUB_TOKEN può far partire). Così c'è
+    # sempre un giro acceso; i giri di GitHub ogni 15 minuti restano come riserva se la catena si interrompe.
+    fine = inizio + ATTESA_MAX
     while True:
         prossima = giro_dei_post(datetime.now(timezone.utc))
-        if prossima is None or prossima - inizio > ATTESA_MAX:
+        adesso = datetime.now(timezone.utc)
+        if adesso >= fine:
             break
-        attesa = (prossima - datetime.now(timezone.utc)).total_seconds()
-        print(f"Aspetto fino alle {prossima:%H:%M} (ora universale), cioè {max(0, attesa) / 60:.0f} minuti")
+        sveglia = min(fine, adesso + CONTROLLO, *([prossima] if prossima and prossima > adesso else []))
+        print(f"Aspetto fino alle {sveglia:%H:%M} (ora universale)")
         sys.stdout.flush()
-        if attesa > 0:
-            time.sleep(attesa + 5)
+        time.sleep(max(5, (sveglia - adesso).total_seconds() + 5))
         # dati freschi prima di pubblicare: una versione nuova del post o una decisione cambiata nel frattempo
         git("pull", "-q", "--rebase", "origin", "main")
+    github("POST", "/actions/workflows/pubblica-programmati.yml/dispatches",
+           {"ref": "main", "inputs": {"prova": False, "orario_prova": ""}})
+    print("Fatto partire il giro successivo della catena")
     return 0
 
 

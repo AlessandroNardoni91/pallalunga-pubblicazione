@@ -19,6 +19,7 @@ on:
 permissions:
   contents: write
   issues: write
+  actions: write  # dal 10/11/2026: ogni giro, prima di chiudersi, fa partire il successivo (la catena)
 
 concurrency:
   group: pubblica-programmati
