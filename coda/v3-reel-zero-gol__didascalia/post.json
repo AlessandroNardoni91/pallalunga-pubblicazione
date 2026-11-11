@@ -4,14 +4,15 @@
   "didascalia": "Centoquarantatré partite di Serie A e nemmeno un gol: è il conto di Walukiewicz fino alla fine della scorsa stagione 👀\n\nAbbiamo contato solo le stagioni già chiuse, fino al 2025/26, e solo i giocatori di movimento, perché per i portieri il discorso è un altro.\n\nGallo è a 135 partite, tutte con il Lecce, e Pongracic a 100 fra Lecce e Fiorentina. Dei nostri otto, quattro giocano oggi a Lecce: Gallo, Kaba, Danilo Veiga e Gaspar. Gaspar, Pavard e Ghilardi sono fermi tutti e tre a 47 partite.\n\nWalukiewicz ha cambiato quattro squadre in sette stagioni, Gallo non si è mai mosso: carriere diverse, stessa casella vuota.\n\nChi di questi otto vedremo esultare per primo? ⬇️\n\n#SerieA #calcio #Lecce #Sassuolo #Reels #pallalungaepedalare",
   "reel": {
     "file": "reel.mp4",
-    "sha256": "6e149a0ebb342db7924663531c7bd617f12106039fda87fdb296a3e349c3052d",
-    "peso_byte": 1244617,
-    "nel_profilo": false
+    "sha256": "12416cfb586e3d1fcd399bd0f861da05c981ffefc0b5f0e1d678b9306beb62df",
+    "peso_byte": 864724,
+    "nel_profilo": false,
+    "copertina_ms": 5700
   },
   "caratteri": 731,
   "hashtag": 6,
   "avvisi": [
-    "la scheda delle fonti è del 31/10, ma la giornata 10 è finita il 02/11: i numeri della stagione in corso potrebbero essere vecchi"
+    "la scheda delle fonti è del 31/10, ma la giornata 11 è finita il 08/11: i numeri della stagione in corso potrebbero essere vecchi"
   ],
   "controlli_fatti": [
     "regole di scrittura della didascalia",
@@ -23,11 +24,11 @@
     "numeri della didascalia rintracciabili nelle fonti",
     "scheda delle fonti più recente dell'ultima giornata"
   ],
-  "impronta_approvata": "76c27c7525cb3d5b",
+  "impronta_approvata": "aa5e3dd869ea4021",
   "approvata_il": null,
   "sha256_jpeg": "0e9da4ef5b6614c74210a6f0c1b410324caaa2706e375816370fb7bfa6219404",
   "peso_jpeg_byte": 621015,
   "esce_il": "2026-11-14T12:30+01:00",
   "esce_il_utc": "2026-11-14T11:30+00:00",
-  "preparato_il": "2026-11-08T11:10:58"
+  "preparato_il": "2026-11-11T15:54:50"
 }
