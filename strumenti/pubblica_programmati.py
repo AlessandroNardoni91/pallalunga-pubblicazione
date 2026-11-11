@@ -349,6 +349,10 @@ def main() -> int:
     print(f"Giro del {inizio:%d/%m/%Y %H:%M} (ora universale){' · PROVA, non pubblico niente' if PROVA else ''}")
     for nome, colore in (("scaduto", "5C6A62"), ("promemoria", "B98900")):
         github("POST", "/labels", {"name": nome, "color": colore})
+    # dati freschi SUBITO (11/11/2026): un giro messo in fila parte con l'archivio di quando è stato messo in fila.
+    # Il 10/11 un giro così ha letto la scheda 109 con la data vecchia (09/11), rimandata per l'11/11 un minuto dopo,
+    # e l'ha segnata «scaduto»: senza questo, stasera il post non sarebbe uscito.
+    git("pull", "-q", "--rebase", "origin", "main")
     giro_del_permesso()
     if PROVA:  # la prova fa un giro solo, come prima, e non accende la catena
         while True:
