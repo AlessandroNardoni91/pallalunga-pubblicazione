@@ -1,0 +1,31 @@
+{
+  "id": "v3-partite-coppa-italia/didascalia.md",
+  "titolo": "Partite di Coppa Italia in carriera, otto giocatori della Serie A",
+  "didascalia": "Dopo Germania, Francia e Spagna torniamo a casa. La Coppa Italia tanti la snobbano, ma c'è chi l'ha giocata quasi ogni anno 👀\n\nAbbiamo contato le partite di Coppa Italia di chi oggi gioca in Serie A, solo stagioni finite, fino al 2025/26. Sotto ogni nome ci sono i gol.\n\nDavanti a tutti c'è De Silvestri con quarantadue partite e cinque gol. Ha cominciato con la Lazio nel 2005/06 e poi l'ha giocata con Fiorentina, Sampdoria, Torino e Bologna. Dietro di lui Biraghi a trentuno, venti con la Fiorentina, e Barella a trenta fra Cagliari e Inter.\n\nDarmian e Politano sono appaiati a ventotto, con un gol a testa. Zieliński ne ha ventisei fra Empoli, Napoli e Inter, Deiola ventiquattro, diciannove con il Cagliari, e chiude Juan Jesus con ventitré.\n\nQual è la partita di Coppa Italia di uno di questi otto che vi ricordate meglio? ⬇️\n\n#SerieA #CoppaItalia #calcio #Bologna #Inter #pallalungaepedalare",
+  "reel": {
+    "file": "reel.mp4",
+    "sha256": "49f64f6e39b4b327321a0fa37a69e066a11fccc99b978f8f51eeddce361c62a5",
+    "peso_byte": 1185092,
+    "nel_profilo": true
+  },
+  "caratteri": 898,
+  "hashtag": 6,
+  "avvisi": [],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "0ca6078fb8ba7729",
+  "approvata_il": null,
+  "sha256_jpeg": "e053d3a00640f81b35aea986ca6ce0a199d142327141b4ce7546d4100a777c81",
+  "peso_jpeg_byte": 575362,
+  "esce_il": "2026-11-18T18:30+01:00",
+  "esce_il_utc": "2026-11-18T17:30+00:00",
+  "preparato_il": "2026-11-11T04:48:00"
+}
