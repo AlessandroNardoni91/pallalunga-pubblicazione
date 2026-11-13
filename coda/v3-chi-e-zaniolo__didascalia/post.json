@@ -1,0 +1,50 @@
+{
+  "id": "v3-chi-e-zaniolo/didascalia.md",
+  "titolo": "Indovina chi: un giocatore della Serie A",
+  "didascalia": "Tre indizi, un giocatore della nostra Serie A. Scorri piano e fermati appena pensi di averlo capito 👀\n\nIl primo indizio viene dall'Inghilterra: una stagione sola, ma piena di partite. Il secondo è il conto delle sue partite in Serie A, giocate con maglie diverse. Il terzo è una sera di maggio in Albania che una tifoseria intera non ha mai dimenticato.\n\nLa risposta è nell'ultima pagina, ma niente trucchi: prima scrivete il nome qui sotto.\n\nA quale indizio l'avete capito, al primo, al secondo o solo al terzo? ⬇️\n\n#SerieA #calcio #IndovinaChi #quiz #pallalungaepedalare",
+  "pagine": [
+    {
+      "file": "post.jpg",
+      "sha256": "bf071743ccbd8b700a62185ff342e986efd83e7423b290c7ce079a3777677e37"
+    },
+    {
+      "file": "post-2.jpg",
+      "sha256": "9823484be839ea5b99bb6f81e77a2c685f21ddbcb9ae3e26d94d46fbc4a9647b"
+    },
+    {
+      "file": "post-3.jpg",
+      "sha256": "14c033a3ea2261bf81d8e823553f383deeed0ba17f31275d9ddfb961b62a6c59"
+    },
+    {
+      "file": "post-4.jpg",
+      "sha256": "ee7703669e1b49b792ee442806d55a1a535b8c02916d2eef3822b7ab18614014"
+    },
+    {
+      "file": "post-5.jpg",
+      "sha256": "6107c6f553593834bbc19ff1fb278cdbd14aa949a19befcf11aec9ae0ab33721"
+    }
+  ],
+  "caratteri": 572,
+  "hashtag": 5,
+  "avvisi": [
+    "pagina 2: grafica: la scritta «, tutte nella stessa stagione. (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 4: grafica: la scritta «di Tirana, nel 2022. Quello che l'ha dec (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "adde4dd51ed21e49",
+  "approvata_il": null,
+  "sha256_jpeg": "bf071743ccbd8b700a62185ff342e986efd83e7423b290c7ce079a3777677e37",
+  "peso_jpeg_byte": 235613,
+  "esce_il": "2026-11-22T18:30+01:00",
+  "esce_il_utc": "2026-11-22T17:30+00:00",
+  "preparato_il": "2026-11-13T04:46:19"
+}
