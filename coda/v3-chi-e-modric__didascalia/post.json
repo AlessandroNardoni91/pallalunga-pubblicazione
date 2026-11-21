@@ -1,0 +1,32 @@
+{
+  "id": "v3-chi-e-modric/didascalia.md",
+  "titolo": "Indovina chi: un giocatore della Serie A",
+  "didascalia": "Tre indizi, un giocatore della nostra Serie A. Mettete in pausa appena pensate di averlo capito 👀\n\nIl primo indizio viene dall'Inghilterra, dove ha passato quattro stagioni con la stessa maglia. Il secondo arriva dalla Spagna ed è un numero di partite che fa girare la testa. Il terzo lo conoscono anche quelli che il calcio lo guardano solo in tv il mercoledì sera.\n\nLa risposta arriva alla fine, ma niente trucchi: prima scrivete il nome qui sotto.\n\nA quale indizio l'avete capito, al primo, al secondo o solo al terzo? ⬇️\n\n#SerieA #calcio #IndovinaChi #quiz #Reels #pallalungaepedalare",
+  "reel": {
+    "file": "reel.mp4",
+    "sha256": "d489626cc577ecb8677a7ee9ea0b5f4252c93074cd67a5f1ce760bba3a0c9706",
+    "peso_byte": 1203077,
+    "nel_profilo": true,
+    "copertina_ms": 500
+  },
+  "caratteri": 588,
+  "hashtag": 6,
+  "avvisi": [],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "48fde0e4bea38e33",
+  "approvata_il": null,
+  "sha256_jpeg": "9ba14122478cea731b1571b596ce813d6e131ac00e67781edcf0a38df37ef0e8",
+  "peso_jpeg_byte": 243876,
+  "esce_il": "2026-11-27T18:30+01:00",
+  "esce_il_utc": "2026-11-27T17:30+00:00",
+  "preparato_il": "2026-11-21T04:47:07"
+}
