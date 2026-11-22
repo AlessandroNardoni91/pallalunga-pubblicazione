@@ -1,0 +1,32 @@
+{
+  "id": "v3-chi-e-de-bruyne/didascalia.md",
+  "titolo": "Indovina chi: un giocatore della Serie A",
+  "didascalia": "Tre indizi, un giocatore della nostra Serie A. Mettete in pausa appena pensate di averlo capito 👀\n\nIl primo indizio è un passaggio in Inghilterra durato pochissimo, e quasi nessuno se lo ricorda. Il secondo viene dalla Germania: in quella stagione ha fatto segnare i compagni a ripetizione. Il terzo è una bacheca che in Inghilterra conoscono tutti.\n\nLa risposta arriva alla fine, ma niente trucchi: prima scrivete il nome qui sotto.\n\nA quale indizio l'avete capito, al primo, al secondo o solo al terzo? ⬇️\n\n#SerieA #calcio #IndovinaChi #quiz #Reels #pallalungaepedalare",
+  "reel": {
+    "file": "reel.mp4",
+    "sha256": "14831ed2253888ac7a37e2fffe268d0b28e3c69d6725e5726c8253f954717bd7",
+    "peso_byte": 1139986,
+    "nel_profilo": true,
+    "copertina_ms": 500
+  },
+  "caratteri": 571,
+  "hashtag": 6,
+  "avvisi": [],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "4877d664379c9b17",
+  "approvata_il": null,
+  "sha256_jpeg": "1207a2865b434805fe807854127e9bdd2be1e78e9fe041c90d09673112166827",
+  "peso_jpeg_byte": 236280,
+  "esce_il": "2026-11-29T18:30+01:00",
+  "esce_il_utc": "2026-11-29T17:30+00:00",
+  "preparato_il": "2026-11-22T04:46:54"
+}
