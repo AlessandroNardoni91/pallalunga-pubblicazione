@@ -1,0 +1,32 @@
+{
+  "id": "v3-partite-portogallo/didascalia.md",
+  "titolo": "Partite di Liga portoghese in carriera, otto giocatori della Serie A",
+  "didascalia": "Il Portogallo ha dato alla Serie A più giocatori di quanto sembri 👀\n\nAbbiamo contato le partite nel campionato portoghese di chi oggi gioca in Serie A, solo stagioni finite, fino al 2025/26. Sotto ogni nome ci sono i gol.\n\nComanda Gonçalves della Fiorentina, con centonovantotto partite e ottanta gol. Molto più indietro Mangas a centodiciassette e João Mário a centosedici.\n\nVitinha ne ha giocate solo quarantadue, ma ha segnato quattordici gol, tanti quanti Bragança in più del doppio delle partite.\n\nChi di questi otto avete visto giocare in Portogallo? ⬇️\n\n#SerieA #LigaPortugal #calcio #Fiorentina #Juventus #Torino #pallalungaepedalare",
+  "reel": {
+    "file": "reel.mp4",
+    "sha256": "a44a7bcbfead401baf54dce6c09a5fe24b3d0178cfee905c05034921d596c651",
+    "peso_byte": 1060579,
+    "nel_profilo": true,
+    "copertina_ms": 5700
+  },
+  "caratteri": 641,
+  "hashtag": 7,
+  "avvisi": [],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "f5c36d0869956299",
+  "approvata_il": null,
+  "sha256_jpeg": "28ef280f1f52b060c4debb14fc8d99cae77913d787d51b5c6c077c60e6cf1e3b",
+  "peso_jpeg_byte": 575953,
+  "esce_il": "2026-11-30T18:30+01:00",
+  "esce_il_utc": "2026-11-30T17:30+00:00",
+  "preparato_il": "2026-11-23T04:45:17"
+}
