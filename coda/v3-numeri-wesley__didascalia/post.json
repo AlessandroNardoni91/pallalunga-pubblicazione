@@ -1,0 +1,38 @@
+{
+  "id": "v3-numeri-wesley/didascalia.md",
+  "titolo": "Wesley in numeri, dopo la 12ª giornata",
+  "didascalia": "A Parma Wesley entra al 56', sull'1-1 👀\n\nMalen segna al 68', al 77' e al 90', e i tre palloni glieli mette tutti lui. Finisce 1-5 e per Wesley la media dei tre voti in pagella è 7,8.\n\nIn campionato è a quota 6 assist: nessun difensore ne ha di più e in tutta la Serie A solo Rabiot è al suo livello. La Roma è seconda, a 2 punti dalla Lazio, e domenica ospita il Monza.\n\nDomani alle 18:30 tocca alle gare in Eredivisie.\n\nQuanti assist avrà Wesley a Natale? ⬇️\n\n#SerieA #calcio #Roma #Wesley #fantacalcio #Reels #pallalungaepedalare",
+  "reel": {
+    "file": "reel.mp4",
+    "sha256": "46295e1908e8cec66598a2ef187acc6dcef0084d3877d2939391225047e5ad29",
+    "peso_byte": 869120,
+    "nel_profilo": true,
+    "copertina_ms": 5700
+  },
+  "caratteri": 531,
+  "hashtag": 7,
+  "avvisi": [
+    "grafica: la scritta «Tre gol di Malen\nin 22 minuti (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "grafica: la scritta «Pari con\nRabiot in testa\nalla Serie A (3 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "grafica: la scritta «assist in campionato, nessun difensore n (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "grafica: la scritta «La Roma è seconda\na 2 punti dalla Lazio (4 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "grafica: la scritta «media dei tre voti in pagella nell'1-5 d (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "9efc0a6d2236567e",
+  "approvata_il": null,
+  "sha256_jpeg": "064a125d74facdb562590032095d2331e65d3affffa2e4089e28b47f01ff4cb8",
+  "peso_jpeg_byte": 497240,
+  "esce_il": "2026-11-25T18:30+01:00",
+  "esce_il_utc": "2026-11-25T17:30+00:00",
+  "preparato_il": "2026-11-24T04:49:53"
+}
