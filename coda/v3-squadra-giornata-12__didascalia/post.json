@@ -1,0 +1,54 @@
+{
+  "id": "v3-squadra-giornata-12/didascalia.md",
+  "titolo": "La dodicesima giornata in cinque pagine",
+  "didascalia": "La dodicesima giornata in cinque pagine, a partire dagli undici migliori 👀\n\nIl migliore è Malen: quattro gol a Parma e 9 in tutte e tre le pagelle. Dietro di lui Pio Esposito, che con la tripletta di Bergamo si prende un 8,2 di media, e Wesley, 7,8 con tre assist nella stessa partita di Malen. Dall'altra parte dei voti c'è Troilo, 4 in tutte e tre le pagelle nell'1-5 del Parma con la Roma.\n\nIl gol che conta di più è quello di Gonçalo Ramos al 19', il 2-0 del Milan sul Frosinone. La sorpresa è il Monza, che batte 3-0 la Fiorentina con due gol di Varela. La delusione è proprio il Frosinone: era settimo e a San Siro ne prende cinque.\n\nChi avreste messo voi come sorpresa della giornata? ⬇️\n\n#SerieA #calcio #SquadraDellaGiornata #Roma #Monza #Milan #pallalungaepedalare",
+  "pagine": [
+    {
+      "file": "post.jpg",
+      "sha256": "0302a1a1ae8447c23e1443f831b468771966f4f2bc2eadce0631a8ff46b602f9"
+    },
+    {
+      "file": "post-2.jpg",
+      "sha256": "ba7f0d0cbd4c9435d15e459abebd9fce42698ba563d05ae1591755283872cd5f"
+    },
+    {
+      "file": "post-3.jpg",
+      "sha256": "7352e006cbdc827a51d14ef36b16c74171a88586474d656e404eaab9b4bbcb39"
+    },
+    {
+      "file": "post-4.jpg",
+      "sha256": "bc4b0d7f9ec6d32fea63488aafea0d20a6ca475ea2d21aa8eea12f19c51e3f55"
+    },
+    {
+      "file": "post-5.jpg",
+      "sha256": "79005307d215383a0b5bff79dd10b61adc4ddfff338e396b7d35ff96a1bb11e4"
+    }
+  ],
+  "caratteri": 774,
+  "hashtag": 7,
+  "avvisi": [
+    "pagina 1: grafica: la scritta «Squadra della dodicesima (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 2: grafica: la scritta «del Parma in casa con la Roma. (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 4: grafica: la scritta «il Monza, che prima della giornata aveva (2 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 4: grafica: la scritta «punti, batte la Fiorentina che ne aveva  (3 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto",
+    "pagina 4: foto gustavo-varela-sagoma.png ingrandita 1.6 volte: può risultare sgranata",
+    "pagina 5: grafica: la scritta «, ne prende cinque dal Milan. Il primo è (3 righe)» non ci sta e va a capo da sola: può spostare o disallineare il resto"
+  ],
+  "controlli_fatti": [
+    "regole di scrittura della didascalia",
+    "niente domande né verdetti dentro la grafica",
+    "numeri della grafica presenti nella scheda delle fonti",
+    "foto con fonte annotata e maglia della stagione in corso",
+    "immagine salvata aggiornata rispetto a contenuto e foto",
+    "scritte non sovrapposte, non tagliate, dentro i bordi",
+    "numeri della didascalia rintracciabili nelle fonti",
+    "scheda delle fonti più recente dell'ultima giornata"
+  ],
+  "impronta_approvata": "522a6c3753ed6d9b",
+  "approvata_il": null,
+  "sha256_jpeg": "0302a1a1ae8447c23e1443f831b468771966f4f2bc2eadce0631a8ff46b602f9",
+  "peso_jpeg_byte": 380513,
+  "esce_il": "2026-11-24T18:30+01:00",
+  "esce_il_utc": "2026-11-24T17:30+00:00",
+  "preparato_il": "2026-11-24T04:45:40"
+}
